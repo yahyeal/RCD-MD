@@ -106292,10 +106292,10 @@
   "name": "RCD-MD",
   "version": "10.8.1",
   "description": "RCD-MD latest multi device whatsapp bot",
-  "main": "body.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start body.js --deep-monitoring --attach --name RCD-MD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name RCD-MD",
     "stop": "pm2 stop RCD-MD",
     "restart": "pm2 restart RCD-MD"
   },
