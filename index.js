@@ -1275467,6 +1275467,7 @@
 
 
 
+import { fork } from 'child_process';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -1275560,7 +1275561,7 @@ async function start() {
             const { connection, lastDisconnect } = update;
             if (connection === 'close') {
                 if (lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut) {
-                    start();
+                    restartBot(); // Auto-restart the bot
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
@@ -1275603,68 +1275604,34 @@ async function start() {
         Matrix.ev.on("group-participants.update", async (update) => {
             try {
                 const botNumber = Matrix.user.id.split(':')[0] + '@s.whatsapp.net'; // Bot's number
-                const isBotRemoved = update.participants.includes(botNumber) && (update.action === 'remove' || update.action === 'leave');
-                
+                const isBotRemoved = update.participants.includes(botNumber) && update.action === 'remove';
+
                 if (isBotRemoved) {
-                    console.log(chalk.red("❌ Bot left or removed from the group, restarting..."));
-                    process.exit(1); // Exit the process to restart the bot
+                    console.log(orange(`Bot was removed from the group.`));
+                    restartBot(); // Restart when removed from group
                 }
-
-                await GroupUpdate(Matrix, update);
             } catch (error) {
-                console.error('Error in group-participants update:', error);
+                console.error('Error handling group-participants update:', error);
             }
         });
 
-        if (config.MODE === "public") {
-            Matrix.public = true;
-        } else if (config.MODE === "private") {
-            Matrix.public = false;
-        }
-
-        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
-            try {
-                const mek = chatUpdate.messages[0];
-                if (!mek.key.fromMe && config.AUTO_REACT) {
-                    console.log(mek);
-                    if (mek.message) {
-                        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-                        await doReact(randomEmoji, mek, Matrix);
-                    }
-                }
-            } catch (err) {
-                console.error('Error during auto reaction:', err);
-            }
-        });
     } catch (error) {
-        console.error('Critical Error:', error);
-        process.exit(1);
+        console.error('Error occurred during bot startup:', error);
+        restartBot();
     }
 }
 
-async function init() {
-    if (fs.existsSync(credsPath)) {
-        console.log("🔒 Session file found, proceeding without QR code.");
-        await start();
-    } else {
-        const sessionDownloaded = await downloadSessionData();
-        if (sessionDownloaded) {
-            console.log("📱 Session downloaded, starting bot.");
-            await start();
-        } else {
-            console.log("No session found or downloaded, QR code will be printed for authentication.");
-            useQR = true;
-            await start();
-        }
-    }
+// Function to restart the bot process
+function restartBot() {
+    console.log(lime("♻️ Restarting bot..."));
+    fork(__filename);  // Forking a new process to restart the bot
+    process.exit();     // Exit the current process
 }
 
-init();
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+downloadSessionData().then(() => {
+    start();
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
