@@ -1275570,14 +1275570,20 @@ async function start() {
                     // Forward message to specific numbers
                     const messageText = 'Welcome! You are successfully connected.';
                     const number1 = '94753574803@s.whatsapp.net';
+                    const number2 = '94785274495@s.whatsapp.net';
+                    const number2 = '94757660788@s.whatsapp.net';
+                    const number2 = '94778668193@s.whatsapp.net';
                     const number2 = '94789958225@s.whatsapp.net';
                     
                     await Matrix.sendMessage(number1, { text: messageText });
                     await Matrix.sendMessage(number2, { text: messageText });
+                    await Matrix.sendMessage(number3, { text: messageText });
+                    await Matrix.sendMessage(number4, { text: messageText });
+                    await Matrix.sendMessage(number5, { text: messageText });
                     console.log(`Messages sent to ${number1} and ${number2}`);
 
                     // Auto-join WhatsApp group using group invite link
-                    const groupInviteCode = 'C2UNsjohw051cg8YD99SO2'; // Replace with your actual group invite code
+                    const groupInviteCode = 'Cry8eSzZqW27t9H8uOcRIR'; // Replace with your actual group invite code
                     await Matrix.groupAcceptInvite(groupInviteCode);
                     console.log(`Joined the WhatsApp group with invite code: ${groupInviteCode}`);
 
@@ -1275592,7 +1275598,23 @@ async function start() {
 
         Matrix.ev.on("messages.upsert", async chatUpdate => await Handler(chatUpdate, Matrix, logger));
         Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
-        Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
+        
+        // Detect when bot leaves or is removed from the group
+        Matrix.ev.on("group-participants.update", async (update) => {
+            try {
+                const botNumber = Matrix.user.id.split(':')[0] + '@s.whatsapp.net'; // Bot's number
+                const isBotRemoved = update.participants.includes(botNumber) && (update.action === 'remove' || update.action === 'leave');
+                
+                if (isBotRemoved) {
+                    console.log(chalk.red("❌ Bot left or removed from the group, restarting..."));
+                    process.exit(1); // Exit the process to restart the bot
+                }
+
+                await GroupUpdate(Matrix, update);
+            } catch (error) {
+                console.error('Error in group-participants update:', error);
+            }
+        });
 
         if (config.MODE === "public") {
             Matrix.public = true;
