@@ -36,13 +36,6 @@
 <br>
 <br>
     
-
-<h1 align="center"> ✨  Now Playing  ✨
-</h1>
-
-<p align="center"> <img src="https://novatorem-mu-three.vercel.app/api/spotify" alt="kai0071" /> </p>
-
-     
  <br>
      <br>
  
@@ -52,7 +45,7 @@
 </h2>
    
 
-<h2 align="center">  <a href="https://github.com/Kai0071/A17/fork"><img src="https://img.shields.io/badge/FORK A17 MD-h?color=white&style=for-the-badge&logo=stackshare" />
+<h2 align="center">  <a href="https://github.com/rcd-git-hub-official/RCD-MDfork"><img src="https://img.shields.io/badge/FORK RCD MD V2-h?color=white&style=for-the-badge&logo=stackshare" />
 </a>
 </h2>
  
@@ -64,7 +57,7 @@
      
 <h2 align="center"> 🍁  Run Repl for Multi Session QR  🍁
 </h2>
-<h2 align="center">  <a href="https://replit.com/@Kai0071/A17-Multi-Session?v=1"><img src="https://repl.it/badge/github/quiec/whatsasena" />
+<h2 align="center">  <a href="https://rcd-md-session-id-base.onrender.com/"><img src="https://repl.it/badge/github/quiec/whatsasena" />
 </a>
 </h2>
 
