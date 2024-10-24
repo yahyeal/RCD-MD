@@ -61,55 +61,44 @@
 </a>
 </h2>
 
-## 
-
-
-## 
-
-
-```
-     
-<br>
-</br>
-
-
   <h2 align="center"> 🚩  Deploy On Codespace  🚩
 </h2>
 <h2 align="center">  <a href="https://github.com/codespaces/new"><img title="RCD MD V2 on Gitub Codespace" src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode" />
 </a>
 </h2>
      
+   
+    
    <br>
   </br>
 
-
-
-
+  
 <h2 align="center"> ❤  Deploy On Heroku  ❤
 </h2>
 
 <p align="center" >
-    <a href="https://heroku.com/deploy?template="https://github.com/rcd-git-hub-official/RCD-MD">
-    <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="Deploy on Heroku" >
+    <a href="https://heroku.com/deploy?template=https://github.com/rcd-git-hub-official/RCD-MD">
+    <img title="RCD MD V2 on Heroku" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="Deploy on Heroku" >
     </a>
 </p>
-     
+
+   <br>
+  </br>
 
 
-</br>
 
 <h2 align="center"> ❤  Deploy On Render  ❤
 </h2>
 
 <p align="center" >
     <a href="https://dashboard.render.com/web/new">
-    <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="Deploy on Heroku" >
+    <img title="RCD MD V2" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="Deploy on Heroku" >
     </a>
-</p>   
+</p>
+     
 
 
-</br>
-
+</br>  
 
      
      
