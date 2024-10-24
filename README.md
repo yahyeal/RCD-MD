@@ -12,15 +12,15 @@
 
    <p align="center"> 
   <a href="https://github.com/rcd-git-hub-official/RCD-MD">
-    <img src="https://img.shields.io/github/stars/Kai0071/A17?style=social">
+    <img src="https://img.shields.io/github/stars/rcd-git-hub-official/RCD-MD?style=social">
     
    <p align="center">
   <a href="https://github.com/rcd-git-hub-official/RCD-MD/fork">
-    <img src="https://img.shields.io/github/forks/Kai0071/A17?label=Fork&style=social">
+    <img src="https://img.shields.io/github/forks/rcd-git-hub-official/RCD-MD?label=Fork&style=social">
     
 <p align="center">
   <a href="https://github.com/rcd-git-hub-official">
-    <img src="https://api.visitorbadge.io/api/visitors?path=Kai0071%2FA17&label=Repo%20Visitors&labelColor=%23697689&countColor=%23ba68c8&style=plastic&labelStyle=upper">
+    <img src="https://api.visitorbadge.io/api/visitors?path=rcd-git-hub-official%2FA17&label=Repo%20Visitors&labelColor=%23697689&countColor=%23ba68c8&style=plastic&labelStyle=upper">
  
   <p align="CENTER">
   <a href="https://github.com/rcd-git-hub-official"><img title="Support" src="https://img.shields.io/badge/Maintain-Yes-cyan.svg?style=for-the-badge&logo=xcode" /></a>
