@@ -8,7 +8,7 @@
 <h1 align="center"> RCD MD V2
 </h1>
 <p align="center"> 
-  Hemlo, I am "RCD MD V2" a WhatsApp bot create and recode by Kai to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+  Hemlo, I am "RCD MD V2" a WhatsApp bot create and code by Rcd Team to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
    <p align="center"> 
   <a href="https://github.com/rcd-git-hub-official/RCD-MD">
