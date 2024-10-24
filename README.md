@@ -1,36 +1,36 @@
 <p align="center">
-   <a href="https://github.com/Kai0071">
+   <a href="https://github.com/rcd-git-hub-official">
     <img src="https://files.catbox.moe/wuyr41.jpg" width="249">
      
 
       
 </p>
-<h1 align="center"> A17 BoT (Beta)
+<h1 align="center"> RCD MD V2
 </h1>
 <p align="center"> 
-  Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+  Hemlo, I am "RCD MD V2" a WhatsApp bot create and recode by Kai to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
    <p align="center"> 
-  <a href="https://github.com/Kai0071/A17/stargazers">
+  <a href="https://github.com/rcd-git-hub-official/RCD-MD">
     <img src="https://img.shields.io/github/stars/Kai0071/A17?style=social">
     
    <p align="center">
-  <a href="https://github.com/Kai0071/A17/fork">
+  <a href="https://github.com/rcd-git-hub-official/RCD-MD/fork">
     <img src="https://img.shields.io/github/forks/Kai0071/A17?label=Fork&style=social">
     
 <p align="center">
-  <a href="https://github.com/Kai0071/A17">
+  <a href="https://github.com/rcd-git-hub-official">
     <img src="https://api.visitorbadge.io/api/visitors?path=Kai0071%2FA17&label=Repo%20Visitors&labelColor=%23697689&countColor=%23ba68c8&style=plastic&labelStyle=upper">
  
   <p align="CENTER">
-  <a href="https://github.com/Kai0071"><img title="Support" src="https://img.shields.io/badge/Maintain-Yes-cyan.svg?style=for-the-badge&logo=xcode" /></a>
+  <a href="https://github.com/rcd-git-hub-official"><img title="Support" src="https://img.shields.io/badge/Maintain-Yes-cyan.svg?style=for-the-badge&logo=xcode" /></a>
 </p>
     
 
      
   
 <p align="CENTER">
-  <a href="https://github.com/Kai0071"><img title="Support" src="https://img.shields.io/badge/next%20Update-Undefined!-green.svg?style=for-the-badge&logo=xcode" /></a>
+  <a href="https://github.com/rcd-git-hub-official"><img title="Support" src="https://img.shields.io/badge/next%20Update-Undefined!-green.svg?style=for-the-badge&logo=xcode" /></a>
 </p>
      
 <br>
