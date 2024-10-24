@@ -44,35 +44,35 @@ const alive = async (m, Matrix) => {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
           display_text: "🐞 *ʀᴄᴅ ᴍᴅ ʙᴜɢ 1*",
-          id: `${prefix}Bug_1${number}`  // Include the number in the button command
+          id: `${prefix}spam_1${number}`  // Include the number in the button command
         })
       },
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
           display_text: "🐞 *ʀᴄᴅ ᴍᴅ ʙᴜɢ 2*",
-          id: `${prefix}Bug_2${number}`  // Include the number in the button command
+          id: `${prefix}spam_2${number}`  // Include the number in the button command
         })
       },
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
           display_text: "🐞 *ʀᴄᴅ ᴍᴅ ʙᴜɢ 3*",
-          id: `${prefix}Bug_3${number}`  // Include the number in the button command
+          id: `${prefix}spam_3${number}`  // Include the number in the button command
         })
       },
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
           display_text: "🐞 *ʀᴄᴅ ᴍᴅ ʙᴜɢ 4*",
-          id: `${prefix}Bug_4${number}`  // Include the number in the button command
+          id: `${prefix}spam_4${number}`  // Include the number in the button command
         })
       },
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
           display_text: "🐞 *ʀᴄᴅ ᴍᴅ ʙᴜɢ 5*",
-          id: `${prefix}Bug_5${number}`
+          id: `${prefix}spam_5${number}`
         })
       }
     ];
