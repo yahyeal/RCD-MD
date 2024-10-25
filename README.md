@@ -11,9 +11,6 @@
    <a href="https://github.com/rcd-git-hub-official">
     <img src="https://files.catbox.moe/wuyr41.jpg" width="249">
 
-<br>
-  </br>
-
 
    <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
      
@@ -28,15 +25,12 @@
   Hemlo, I am "RCD MD V2" a WhatsApp bot create and code by Rcd Team to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
 
-<br>
-  </br>
+
 
 
    <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
      
-   <br>
-  </br>
-  
+   
 
    <p align="center"> 
   <a href="https://github.com/rcd-git-hub-official/RCD-MD">
@@ -68,21 +62,12 @@
   <a href="https://github.com/rcd-git-hub-official"><img title="Support" src="https://img.shields.io/badge/next%20Update-Undefined!-green.svg?style=for-the-badge&logo=xcode" /></a>
 </p>
      
-<br>
-<br>
-    
- <br>
-     <br>
- 
-     <br>
-  </br>
+
 
 
    <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
      
-   <br>
-  </br>
-
+   
 <h2 align="center"> 🔰 Tap Here To Fork 🔰 
 </h2>
    
@@ -172,55 +157,25 @@
   </br>
      
      
-- Termux
+- COPY AND EDIT 
 ```js
-termux-setup-storage
-```
-```
-apt update
-```
-```
-apt upgrade
-```
-```
-pkg update && pkg upgrade
-```
-```
-pkg install bash
-```
-```
-pkg install libwebp
-```
-```
-pkg install git -y
-```
-```
-pkg install nodejs -y
-```
-```
-pkg install ffmpeg -y 
-```
-```
-pkg install wget
-```
-```
-pkg install imagemagick -y
-```
-```
-git clone https://github.com/rcd-git-hub-official/RCD-MD
-```
-```
-cd A17
-```
-```
-npm i
-```
-```
-npm start
+SESSION_ID=
+STATUS_SEND_RAW_URL=
+AUTO_SEND_MESSAGE=
+AUTO_STATUS_SEEN=true
+REJECT_CALL=false
+MODE=public
+WELCOME=false
+AUTO_READ=false
+AUTO_TYPING=false
+AUTO_RECORDING=true
+ALWAYS_ONLINE=false
+AUTO_BLOCK=true
+AUTO_REACT=false
+PREFIX=.
 ```
 
-<br>
-  </br>
+
 
 
    <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
