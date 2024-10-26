@@ -18,7 +18,7 @@ const xvdl = async (m, gss) => {
 
     try {
       // Request video data from the API
-      const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=${url}`);
+      const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=https://www.xvideos.com/video.ufthamhfcab/step_mom_shared_bed_with_stepson_in_hotel`);
 
       // Check if the response has necessary data
       if (response.data && response.data.status) {
