@@ -203,7 +203,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
                   ]}`
                 },
               ],
-            }),{
+            }),
+            {
                   "name": "single_select",
                   "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ",
                  "sections":
