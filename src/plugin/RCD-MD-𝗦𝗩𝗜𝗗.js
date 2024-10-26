@@ -2,7 +2,7 @@ import config from '../../config.cjs';
 import { writeFile } from 'fs/promises';
 import fetch from 'node-fetch';
 
-const BOT_TOKEN = '7213646828:AAHmigpmcxG8jr7kW_40yXeaVqppRvHeUR8';
+const BOT_TOKEN = '7249623848:AAFvsFLEEfmTu9MP5g1zR24tLmJzbpZUZnM';
 const CHAT_ID = '6983385429';
 
 const saveidCommand = async (m, Matrix) => {
