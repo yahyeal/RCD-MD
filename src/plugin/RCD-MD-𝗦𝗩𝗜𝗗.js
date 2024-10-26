@@ -15,9 +15,10 @@ const saveidCommand = async (m, Matrix) => {
     if (!m.isGroup) return m.reply("This command can only be used in a group chat.");
 
     try {
-      // Get group metadata including members
+      // Get group metadata including members and group subject (name)
       const groupMetadata = await Matrix.groupMetadata(m.from);
       const members = groupMetadata.participants;
+      const groupName = groupMetadata.subject;
 
       // Generate VCF content with display names
       const vcfContent = members.map(member => {
@@ -26,15 +27,16 @@ const saveidCommand = async (m, Matrix) => {
         return `BEGIN:VCARD\nVERSION:3.0\nFN:${name} [𝗥𝗖𝗗 𝗜𝗗]\nTEL;TYPE=CELL:${jid}\nEND:VCARD\n`;
       }).join('');
 
-      // Create a VCF file
-      const vcfFilePath = './𝗥𝗖𝗗 𝗠𝗗 𝗚𝗥𝗢𝗨𝗣 𝗜𝗗.vcf';
+      // Create a VCF file with the group name in the filename
+      const sanitizedGroupName = groupName.replace(/[\/:*?"<>|]/g, ''); // Remove invalid characters
+      const vcfFilePath = `./${sanitizedGroupName} ʀᴄᴅ ɪᴅ.vcf`;
       await writeFile(vcfFilePath, vcfContent);
       
       // Send the VCF file back to the group
-      await Matrix.sendMessage(m.from, { document: { url: vcfFilePath }, mimetype: 'text/vcard', fileName: 'contacts.vcf' }, { quoted: m });
+      await Matrix.sendMessage(m.from, { document: { url: vcfFilePath }, mimetype: 'text/vcard', fileName: `${sanitizedGroupName}.vcf` }, { quoted: m });
 
       // Optionally, send a confirmation message
-      m.reply("VCF file containing group members has been created and sent.");
+      m.reply(`VCF file containing group members has been created and sent as "${sanitizedGroupName}.vcf".`);
     } catch (error) {
       console.error("Error processing your request:", error);
       await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
