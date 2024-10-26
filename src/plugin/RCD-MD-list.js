@@ -198,13 +198,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
                         "title":"ᴄᴏɴᴠᴇʀᴛᴇʀ ᴍᴇɴᴜ",
                         "description":"ʀ ᴄ ᴅ-ᴍᴅ",
                         "id":"Converter Menu"
-                      }
-                    ]}
-                  ]}`
-                },
-              ],
-            }),
-            {
+                      },
+                      {
                   "name": "single_select",
                   "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ",
                  "sections":
