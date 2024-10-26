@@ -1,1 +1,211 @@
-(function(_0x18ad74,_0x5b2bb0){function _0x478add(_0xe0d9f7,_0x23fe1f){return _0x167b(_0x23fe1f-0x268,_0xe0d9f7);}const _0x44d766=_0x18ad74();while(!![]){try{const _0x3ab726=parseInt(_0x478add(0x3b3,0x3ba))/0x1*(parseInt(_0x478add(0x3d4,0x3b1))/0x2)+-parseInt(_0x478add(0x393,0x399))/0x3+parseInt(_0x478add(0x3cb,0x3be))/0x4*(-parseInt(_0x478add(0x37a,0x390))/0x5)+-parseInt(_0x478add(0x39b,0x3b5))/0x6+parseInt(_0x478add(0x38e,0x3a2))/0x7*(-parseInt(_0x478add(0x381,0x3a4))/0x8)+parseInt(_0x478add(0x383,0x39e))/0x9+parseInt(_0x478add(0x3ae,0x38e))/0xa;if(_0x3ab726===_0x5b2bb0)break;else _0x44d766['push'](_0x44d766['shift']());}catch(_0x630f6d){_0x44d766['push'](_0x44d766['shift']());}}}(_0x3ce4,0x1a60c));const _0x5c701c=(function(){let _0x56420c=!![];return function(_0x47b7ae,_0x2c52e1){const _0x3bd68f=_0x56420c?function(){function _0x5b82b2(_0x2bcc85,_0x28b776){return _0x167b(_0x28b776- -0x156,_0x2bcc85);}if(_0x2c52e1){const _0x248966=_0x2c52e1[_0x5b82b2(-0x25,-0x32)](_0x47b7ae,arguments);return _0x2c52e1=null,_0x248966;}}:function(){};return _0x56420c=![],_0x3bd68f;};}()),_0x2c91d5=_0x5c701c(this,function(){const _0x3903f4=function(){function _0x5e389a(_0x58cfdf,_0x35662c){return _0x167b(_0x58cfdf-0x107,_0x35662c);}let _0x47bcb3;try{_0x47bcb3=Function('return\x20(function()\x20'+_0x5e389a(0x26a,0x261)+');')();}catch(_0x24893d){_0x47bcb3=window;}return _0x47bcb3;},_0x54eb50=_0x3903f4();function _0x36c550(_0x489639,_0xf4201e){return _0x167b(_0xf4201e-0x230,_0x489639);}const _0x505226=_0x54eb50['console']=_0x54eb50[_0x36c550(0x38c,0x37b)]||{},_0x44b9a0=[_0x36c550(0x398,0x396),_0x36c550(0x3a2,0x395),_0x36c550(0x397,0x389),_0x36c550(0x379,0x390),_0x36c550(0x390,0x370),_0x36c550(0x389,0x37a),_0x36c550(0x38b,0x394)];for(let _0x41db7a=0x0;_0x41db7a<_0x44b9a0['length'];_0x41db7a++){const _0x43b08c=_0x5c701c[_0x36c550(0x376,0x362)][_0x36c550(0x34f,0x368)]['bind'](_0x5c701c),_0x545f09=_0x44b9a0[_0x41db7a],_0x5f2562=_0x505226[_0x545f09]||_0x43b08c;_0x43b08c[_0x36c550(0x392,0x376)]=_0x5c701c[_0x36c550(0x3b1,0x392)](_0x5c701c),_0x43b08c[_0x36c550(0x35d,0x371)]=_0x5f2562[_0x36c550(0x34f,0x371)][_0x36c550(0x38c,0x392)](_0x5f2562),_0x505226[_0x545f09]=_0x43b08c;}});function _0x167b(_0x12d643,_0x1e068d){const _0xd78c83=_0x3ce4();return _0x167b=function(_0x2c91d5,_0x5c701c){_0x2c91d5=_0x2c91d5-0x122;let _0x4d632b=_0xd78c83[_0x2c91d5];return _0x4d632b;},_0x167b(_0x12d643,_0x1e068d);}_0x2c91d5();function _0x3ce4(){const _0x2e2791=['reply','Body','single_select','exception','toString','length','*යම්\x20කිසි\x20දෙශයක්\x20සිදු\x20විය\x20නැවත\x20try\x20කරන්න*\x20🙂.','relayMessage','\x0a*_Forks:_*\x20','__proto__','sender','CONTACT\x20CYBER\x20DEXTER\x20❯','908mkqYsw','table','console','https://github.com/RCD-GITHUB-REAL/GG-DEXTER','385404kRyOak','split','https://i.ibb.co/vwnzDBm/20241018-150421.jpg','https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u','Footer','307CGlAPn','https://wa.me/+94785274495?text=*ʜɪ+ʀᴄᴅ+ᴍᴅ+ᴛᴇᴀᴍ+ᴀᴅᴍɪɴ+CYBER+ᴅᴇxᴛᴇʀ+❯*','script','Message','4UKeeqy','CONTACT\x20REAL\x20DEXTER\x20❯','toLocaleDateString','info','{\x22title\x22:\x22ᴛᴀᴘ\x20ʜᴇʀᴇ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22sections\x22:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20[{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22highlight_label\x22:\x22ᴀʟʟ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22rows\x22:[\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴀʟʟ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22View\x20All\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴅᴏᴡɴʟᴏᴀᴅ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Downloader\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ɢʀᴏᴜᴘ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Group\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴛᴏᴏʟ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Tool\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴍᴀɪɴ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Main\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴛᴇᴀᴍ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Owner\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴀɪ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Ai\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ꜱᴇᴀʀᴄʜ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Search\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ꜱᴛᴀʟᴋ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Stalk\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴄᴏɴᴠᴇʀᴛᴇʀ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Converter\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20]}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20]}','JOIN\x20WHATSAPP\x20CHANNEL','cta_url','Header','InteractiveMessage','slice','error','stringify','bind','{}.constructor(\x22return\x20this\x22)(\x20)','trace','warn','log','match','https://wa.me/+94757660788?text=*ʜɪ+ʀᴄᴅ+ᴍᴅ+ᴛᴇᴀᴍ+ᴀᴅᴍɪɴ+RAVI+❯*','from','apply','\x0a*_Created\x20At:_*\x20','1495780HJgSAf','©\x20ᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ʀᴄᴅ-ᴍᴅ','626910tPJgdP','React','RCD-MD\x20WHATSAPP\x20CHANNEL','*_Repository\x20Information:_*\x0a\x0a*_Name:_*\x20*RCD\x20MD*\x0a*_Stars:_*\x20','waUploadToServer','body','create','CLICK\x20HERE\x20TO\x20FORK\x20RCD','toLowerCase','353649LGBeRC','constructor','Error\x20processing\x20your\x20request:','\x0a*_Last\x20Updated:_*\x20','YOUTUBE\x20WATCH\x20TUTORIAL','1579734YQccVW','key','prototype','https://github.com/RCD-MD-MAIN/RCD-MD-V/fork','10381oHgpxk','\x0a*_Owner:_*\x20*RCD,TEAM*\x0a\x20\x20\x20\x20','264hAMeKq'];_0x3ce4=function(){return _0x2e2791;};return _0x3ce4();}import _0x5aa34a,{prepareWAMessageMedia}from'@whiskeysockets/baileys';const {generateWAMessageFromContent,proto}=_0x5aa34a;import _0x2abbb3 from'axios';const searchRepo=async(_0xeb391f,_0x24117f)=>{function _0x1c11a8(_0x4fcda3,_0x53a9be){return _0x167b(_0x53a9be-0xa,_0x4fcda3);}const _0x12a760=_0xeb391f[_0x1c11a8(0x124,0x137)][_0x1c11a8(0x15b,0x171)](/^[\\/!#.]/),_0x1089f0=_0x12a760?_0x12a760[0x0]:'/',_0x14a3f8=_0xeb391f['body']['startsWith'](_0x1089f0)?_0xeb391f['body'][_0x1c11a8(0x15a,0x169)](_0x1089f0[_0x1c11a8(0x153,0x14c)])[_0x1c11a8(0x156,0x158)]('\x20')[0x0][_0x1c11a8(0x15d,0x13a)]():'',_0x31ac19=['repo','sc',_0x1c11a8(0x154,0x15e)];if(_0x31ac19['includes'](_0x14a3f8)){const _0x2f8fe8=_0x1c11a8(0x136,0x156);await handleRepoCommand(_0xeb391f,_0x24117f,_0x2f8fe8);}},handleRepoCommand=async(_0xaf3198,_0xaefa1a,_0x3ca823)=>{function _0x5ef676(_0x1c73b6,_0x2da006){return _0x167b(_0x1c73b6-0x3d9,_0x2da006);}try{const _0xeb5a39=await _0x2abbb3['get'](_0x3ca823),_0x2707be=_0xeb5a39['data'],{full_name:_0x46638f,name:_0x2b02cb,forks_count:_0x24ac41,stargazers_count:_0x479b28,created_at:_0x49f811,updated_at:_0x1229b5,owner:_0x4201a9}=_0x2707be,_0x414d85=_0x5ef676(0x504,0x519)+_0x479b28+_0x5ef676(0x51e,0x505)+_0x24ac41+_0x5ef676(0x4fe,0x4de)+new Date(_0x49f811)[_0x5ef676(0x531,0x53c)]()+_0x5ef676(0x50d,0x4f8)+new Date(_0x1229b5)[_0x5ef676(0x531,0x54e)]()+_0x5ef676(0x514,0x51f),_0x42e072=generateWAMessageFromContent(_0xaf3198[_0x5ef676(0x4fc,0x510)],{'viewOnceMessage':{'message':{'messageContextInfo':{'deviceListMetadata':{},'deviceListMetadataVersion':0x2},'interactiveMessage':proto[_0x5ef676(0x52e,0x519)][_0x5ef676(0x537,0x52e)][_0x5ef676(0x507,0x4f9)]({'body':proto['Message'][_0x5ef676(0x537,0x556)][_0x5ef676(0x517,0x510)][_0x5ef676(0x507,0x4f8)]({'text':_0x414d85}),'footer':proto['Message'][_0x5ef676(0x537,0x54b)][_0x5ef676(0x52a,0x547)][_0x5ef676(0x507,0x4e6)]({'text':_0x5ef676(0x500,0x509)}),'header':proto[_0x5ef676(0x52e,0x516)][_0x5ef676(0x537,0x537)][_0x5ef676(0x536,0x556)]['create']({...await prepareWAMessageMedia({'image':{'url':_0x5ef676(0x528,0x50a)}},{'upload':_0xaefa1a[_0x5ef676(0x505,0x50b)]}),'title':'','gifPlayback':!![],'subtitle':'','hasMediaAttachment':![]}),'nativeFlowMessage':proto['Message'][_0x5ef676(0x537,0x529)]['NativeFlowMessage'][_0x5ef676(0x507,0x520)]({'buttons':[{'name':_0x5ef676(0x535,0x539),'buttonParamsJson':JSON[_0x5ef676(0x53a,0x53a)]({'display_text':_0x5ef676(0x530,0x51a),'url':'https://wa.me/+94753574803?text=*ʜɪ+ʀᴄᴅ+ᴍᴅ+ᴛᴇᴀᴍ+ᴀᴅᴍɪɴ+ᴅᴇxᴛᴇʀ+❯*'})},{'name':_0x5ef676(0x535,0x51b),'buttonParamsJson':JSON[_0x5ef676(0x53a,0x51e)]({'display_text':'CONTACT\x20REAL\x20RAVIYA\x20❯','url':_0x5ef676(0x4fb,0x51e)})},{'name':_0x5ef676(0x535,0x53f),'buttonParamsJson':JSON[_0x5ef676(0x53a,0x536)]({'display_text':_0x5ef676(0x521,0x51f),'url':_0x5ef676(0x52c,0x51f)})},{'name':'cta_url','buttonParamsJson':JSON[_0x5ef676(0x53a,0x551)]({'display_text':_0x5ef676(0x508,0x50d),'url':_0x5ef676(0x512,0x51e)})},{'name':_0x5ef676(0x535,0x556),'buttonParamsJson':JSON[_0x5ef676(0x53a,0x54d)]({'display_text':_0x5ef676(0x534,0x52d),'url':_0x5ef676(0x529,0x50e)})},{'name':_0x5ef676(0x535,0x538),'buttonParamsJson':JSON[_0x5ef676(0x53a,0x523)]({'display_text':_0x5ef676(0x50e,0x528),'url':'https://www.youtube.com/@Dextertoola999'})},{'name':_0x5ef676(0x518,0x518),'buttonParamsJson':_0x5ef676(0x533,0x52b)}]}),'contextInfo':{'mentionedJid':[_0xaf3198[_0x5ef676(0x520,0x502)]],'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'120363286758767913@newsletter','newsletterName':_0x5ef676(0x503,0x521),'serverMessageId':0x8f}}})}}},{});await _0xaefa1a[_0x5ef676(0x51d,0x505)](_0x42e072['key']['remoteJid'],_0x42e072['message'],{'messageId':_0x42e072[_0x5ef676(0x510,0x4fd)]['id']}),await _0xaf3198[_0x5ef676(0x502,0x4e6)]('✅');}catch(_0x5117f8){console[_0x5ef676(0x539,0x553)](_0x5ef676(0x50c,0x502),_0x5117f8),_0xaf3198[_0x5ef676(0x516,0x4fe)](_0x5ef676(0x51c,0x53a)),await _0xaf3198[_0x5ef676(0x502,0x4f4)]('❌');}};export default searchRepo;
+import pkg, { prepareWAMessageMedia } from '@whiskeysockets/baileys';
+const { generateWAMessageFromContent, proto } = pkg;
+import axios from 'axios';
+
+const searchRepo = async (m, Matrix) => {
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+
+  const validCommands = ['repo', 'sc', 'script'];
+
+  if (validCommands.includes(cmd)) {
+    const repoUrl = `https://github.com/RCD-GITHUB-REAL/GG-DEXTER`;
+    
+    await handleRepoCommand(m, Matrix, repoUrl);
+  }
+};
+
+const handleRepoCommand = async (m, Matrix, repoUrl) => {
+  try {
+    const response = await axios.get(repoUrl);
+    const repoData = response.data;
+
+    const {
+      full_name,
+      name,
+      forks_count,
+      stargazers_count,
+      created_at,
+      updated_at,
+      owner,
+    } = repoData;
+
+    const messageText = `*_Repository Information:_*\n
+*_Name:_* *RCD MD*
+*_Stars:_* ${stargazers_count}
+*_Forks:_* ${forks_count}
+*_Created At:_* ${new Date(created_at).toLocaleDateString()}
+*_Last Updated:_* ${new Date(updated_at).toLocaleDateString()}
+*_Owner:_* *RCD,TEAM*
+    `;
+
+    const repoMessage = generateWAMessageFromContent(m.from, {
+      viewOnceMessage: {
+        message: {
+          messageContextInfo: {
+            deviceListMetadata: {},
+            deviceListMetadataVersion: 2,
+          },
+          interactiveMessage: proto.Message.InteractiveMessage.create({
+            body: proto.Message.InteractiveMessage.Body.create({
+              text: messageText,
+            }),
+            footer: proto.Message.InteractiveMessage.Footer.create({
+              text: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴄᴅ-ᴍᴅ',
+            }),
+            header: proto.Message.InteractiveMessage.Header.create({
+              ...(await prepareWAMessageMedia({
+                image: {
+                  url: 'https://i.ibb.co/vwnzDBm/20241018-150421.jpg',
+                },
+              }, { upload: Matrix.waUploadToServer })),
+              title: '',
+              gifPlayback: true,
+              subtitle: '',
+              hasMediaAttachment: false,
+            }),
+            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+              buttons: [
+                 {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'CONTACT REAL DEXTER ❯',
+                    url: 'https://wa.me/+94753574803?text=*ʜɪ+ʀᴄᴅ+ᴍᴅ+ᴛᴇᴀᴍ+ᴀᴅᴍɪɴ+ᴅᴇxᴛᴇʀ+❯*',
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'CONTACT REAL RAVIYA ❯',
+                    url: 'https://wa.me/+94757660788?text=*ʜɪ+ʀᴄᴅ+ᴍᴅ+ᴛᴇᴀᴍ+ᴀᴅᴍɪɴ+RAVI+❯*',
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'CONTACT CYBER DEXTER ❯',
+                    url: 'https://wa.me/+94785274495?text=*ʜɪ+ʀᴄᴅ+ᴍᴅ+ᴛᴇᴀᴍ+ᴀᴅᴍɪɴ+CYBER+ᴅᴇxᴛᴇʀ+❯*',
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'CLICK HERE TO FORK RCD',
+                    url: 'https://github.com/RCD-MD-MAIN/RCD-MD-V/fork',
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'JOIN WHATSAPP CHANNEL',
+                    url: 'https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u',
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'YOUTUBE WATCH TUTORIAL',
+                    url: 'https://www.youtube.com/@Dextertoola999',
+                  }),
+                },
+                {
+                  "name": "single_select",
+                  "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ",
+                 "sections":
+                   [{
+                    "title":"ʀ ᴄ ᴅ-ᴍᴅ ᴍᴇɴᴜ",
+                    "highlight_label":"ᴀʟʟ ᴍᴇɴᴜ",
+                    "rows":[
+                      {
+                       "header":"",
+                       "title":"ᴀʟʟ ᴍᴇɴᴜ",
+                       "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                       "id":"View All Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Downloader Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Group Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ᴛᴏᴏʟ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Tool Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ᴍᴀɪɴ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Main Menu"
+                      },
+                     {
+                        "header":"",
+                        "title":"ᴛᴇᴀᴍ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Owner Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ᴀɪ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Ai Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Search Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ꜱᴛᴀʟᴋ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Stalk Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"ᴄᴏɴᴠᴇʀᴛᴇʀ ᴍᴇɴᴜ",
+                        "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                        "id":"Converter Menu"
+                      }
+                    ]}
+                  ]}`
+                },
+              ],
+            }),
+            contextInfo: {
+                  mentionedJid: [m.sender], 
+                  forwardingScore: 999,
+                  isForwarded: false,
+                forwardedNewsletterMessageInfo: {
+                  newsletterJid: '120363286758767913@newsletter',
+                newsletterName: "RCD-MD WHATSAPP CHANNEL",
+                  serverMessageId: 143
+                }
+              }
+          }),
+        },
+      },
+    }, {});
+
+    await Matrix.relayMessage(repoMessage.key.remoteJid, repoMessage.message, {
+      messageId: repoMessage.key.id,
+    });
+    await m.React('✅');
+  } catch (error) {
+    console.error('Error processing your request:', error);
+    m.reply('*යම් කිසි දෙශයක් සිදු විය නැවත try කරන්න* 🙂.');
+    await m.React('❌');
+  }
+};
+
+export default searchRepo;
