@@ -11,7 +11,7 @@ const xvdl = async (m, gss) => {
 
     const url = m.body.split(' ')[1];
     if (!url) {
-      return m.reply('Please provide a URL for the video you want to download.');
+      return m.reply('Please provide a valid URL for the video you want to download.');
     }
 
     m.reply('Fetching video information, please wait...');
@@ -30,7 +30,7 @@ const xvdl = async (m, gss) => {
           const imagePath = `./${Date.now()}-thumbnail.jpg`;
           fs.writeFileSync(imagePath, imageResponse.data);
         } catch {
-          return m.reply('Failed to download the video thumbnail.');
+          return m.reply('Failed to download the video thumbnail. Please check the image URL.');
         }
 
         // Download the video file
@@ -39,7 +39,7 @@ const xvdl = async (m, gss) => {
           const videoPath = `./${Date.now()}.mp4`;
           fs.writeFileSync(videoPath, videoResponse.data);
         } catch {
-          return m.reply('Failed to download the video.');
+          return m.reply('Failed to download the video. Please check the download link.');
         }
 
         // Construct the caption with views, likes, and download link
@@ -52,13 +52,13 @@ const xvdl = async (m, gss) => {
         fs.unlinkSync(imagePath);
         fs.unlinkSync(videoPath);
       } else {
-        m.reply('Failed to fetch video data. Please check the URL and try again.');
+        m.reply('Failed to fetch video data. The video might not exist or the URL is invalid. Please check and try again.');
       }
     } catch {
-      m.reply('An error occurred while fetching video data.');
+      m.reply('An error occurred while fetching video data. Please check the API endpoint or your internet connection.');
     }
   } catch {
-    m.reply('An Error Occurred While Processing The Command.');
+    m.reply('An error occurred while processing the command. Please try again.');
   }
 };
 
