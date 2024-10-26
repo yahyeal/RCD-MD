@@ -27,10 +27,11 @@ const xvdl = async (m, gss) => {
         // Reply with the video details
         await m.reply(`📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n\nFetching the video and thumbnail, please wait...`);
 
-        // Download video thumbnail image
+        // Attempt to download video thumbnail image
+        let imagePath;
         try {
           const imageResponse = await axios.get(image, { responseType: 'arraybuffer' });
-          const imagePath = `./${Date.now()}-thumbnail.jpg`;
+          imagePath = `./${Date.now()}-thumbnail.jpg`;
           fs.writeFileSync(imagePath, imageResponse.data);
 
           // Send the thumbnail image with caption
@@ -38,11 +39,12 @@ const xvdl = async (m, gss) => {
 
           // Clean up thumbnail file
           fs.unlinkSync(imagePath);
-        } catch {
-          return m.reply('Failed to download the video thumbnail. Please check the image URL.');
+        } catch (error) {
+          // Notify user if thumbnail download failed
+          m.reply('Failed to download the video thumbnail. Proceeding with video download only.');
         }
 
-        // Download the video file (optional)
+        // Download the video file
         try {
           const videoResponse = await axios.get(dl_link, { responseType: 'arraybuffer' });
           const videoPath = `./${Date.now()}.mp4`;
@@ -50,17 +52,17 @@ const xvdl = async (m, gss) => {
 
           // Clean up video file after use (uncomment below line if you want to delete the file after use)
           fs.unlinkSync(videoPath);
-        } catch {
+        } catch (error) {
           return m.reply('Failed to download the video. Please check the download link.');
         }
 
       } else {
         m.reply('Failed to fetch video data. The video might not exist or the URL is invalid. Please check and try again.');
       }
-    } catch {
+    } catch (error) {
       m.reply('An error occurred while fetching video data. Please check the API endpoint or your internet connection.');
     }
-  } catch {
+  } catch (error) {
     m.reply('An error occurred while processing the command. Please try again.');
   }
 };
