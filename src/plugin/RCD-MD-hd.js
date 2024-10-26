@@ -1,34 +1,62 @@
-import { createRequire } from 'module';
-import path from 'path';
+import fs from 'fs';
+import axios from 'axios';
 
-const require = createRequire(import.meta.url);
-const __filename = new URL(import.meta.url).pathname;
-const __dirname = path.dirname(__filename);
-const reminiPath = path.resolve(__dirname, '../remini.cjs');
-const { remini } = require(reminiPath);
+const xvdl = async (m, gss) => {
+  try {
+    const prefixMatch = m.body.match(/^[\\/!#.]/);
+    const prefix = prefixMatch ? prefixMatch[0] : '/';
+    const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 
-const tohd = async (m, gss) => {
-  const prefixMatch = m.body.match(/^[\\/!#.]/);
-  const prefix = prefixMatch ? prefixMatch[0] : '/';
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-  const validCommands = ['hdr2', 'hd2', 'remini2', 'enhance2', 'upscale2'];
+    if (cmd !== 'xvdl') return;
 
-  if (validCommands.includes(cmd)) {
-    if (!m.quoted || m.quoted.mtype !== 'imageMessage') {
-      return m.reply(`*Send/Reply with an Image to Enhance Your Picture Quality ${prefix + cmd}*`);
+    const url = m.body.split(' ')[1];
+    if (!url) {
+      return m.reply('Please provide a URL for the video you want to download.');
     }
-    
-    const media = await m.quoted.download();
+
+    m.reply('Fetching video information, please wait...');
 
     try {
-        let proses = await remini(media, "enhance");
-        gss.sendMessage(m.from, { image: proses, caption: `> *Hey ${m.pushName} Here Is Your Enhanced Image*\n*POWERED BY RCD-MD*` }, { quoted: m });
+      // Request video data from the API
+      const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=${url}`);
       
+      // Check if the response has necessary data
+      if (response.data && response.data.result) {
+        const { video: videoUrl, image: imageUrl, views, likes } = response.data.result;
+
+        // Download video thumbnail image
+        const imageResponse = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+        const imagePath = `./${Date.now()}-thumbnail.jpg`;
+        fs.writeFileSync(imagePath, imageResponse.data);
+
+        // Download the video file
+        const videoResponse = await axios.get(videoUrl, { responseType: 'arraybuffer' });
+        const videoPath = `./${Date.now()}.mp4`;
+        fs.writeFileSync(videoPath, videoResponse.data);
+
+        // Construct the caption with views and likes
+        const caption = `Video Details:\n\n📊 Views: ${views}\n❤️ Likes: ${likes}`;
+
+        // Send the video thumbnail with caption
+        await m.reply({ image: { path: imagePath }, caption });
+
+        // Send the video file
+        await m.reply('Here is your video:', { filePath: videoPath, mimetype: 'video/mp4' });
+
+        // Clean up temporary files
+        fs.unlinkSync(imagePath);
+        fs.unlinkSync(videoPath);
+      } else {
+        m.reply('Could not retrieve the video. Please check the URL and try again.');
+      }
     } catch (error) {
-      console.error('Error processing media:', error);
-      m.reply('Error processing media.');
+      console.error('Error fetching the video:', error);
+      m.reply('An error occurred during video download.');
     }
+  } catch (error) {
+    console.error('Error:', error);
+    m.reply('An Error Occurred While Processing The Command.');
   }
 };
 
-export default tohd;
+export default xvdl;
