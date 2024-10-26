@@ -1,5 +1,6 @@
 import fs from 'fs';
 import axios from 'axios';
+import fetch from 'node-fetch'; // Install with: npm install node-fetch
 
 const xvdl = async (m, gss) => {
   try {
@@ -27,12 +28,21 @@ const xvdl = async (m, gss) => {
         // Reply with the video details
         await m.reply(`📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n\nFetching the video and thumbnail, please wait...`);
 
-        // Attempt to download video thumbnail image
+        // Attempt to download video thumbnail image using node-fetch
         let imagePath;
         try {
-          const imageResponse = await axios.get(image, { responseType: 'arraybuffer' });
+          const imageResponse = await fetch(image, {
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+              'Referer': 'https://www.xvideos.com'
+            }
+          });
+
+          if (!imageResponse.ok) throw new Error('Failed to fetch image.');
+
+          const imageBuffer = await imageResponse.arrayBuffer();
           imagePath = `./${Date.now()}-thumbnail.jpg`;
-          fs.writeFileSync(imagePath, imageResponse.data);
+          fs.writeFileSync(imagePath, Buffer.from(imageBuffer));
 
           // Send the thumbnail image with caption
           await m.reply({ image: { path: imagePath }, caption: `📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n🔗 *Download Link*: [Click Here](${dl_link})` });
@@ -46,10 +56,11 @@ const xvdl = async (m, gss) => {
 
         // Download the video file
         try {
-          const videoResponse = await axios.get(dl_link, { responseType: 'arraybuffer' });
+          const videoResponse = await axios.get(dl_link, { responseType: 'arraybuffer', maxRedirects: 5 });
           const videoPath = `./${Date.now()}.mp4`;
           fs.writeFileSync(videoPath, videoResponse.data);
 
+          // Optionally send or use the videoPath
           // Clean up video file after use (uncomment below line if you want to delete the file after use)
           fs.unlinkSync(videoPath);
         } catch (error) {
