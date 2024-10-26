@@ -17,10 +17,10 @@ const xvdl = async (m, gss) => {
     m.reply('Fetching video information, please wait...');
 
     try {
-      // Request video data from the API
-      const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=https://www.xvideos.com/video.ufthamhfcab/step_mom_shared_bed_with_stepson_in_hotel`);
+      // Request video data from the API using the provided URL
+      const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=${url}`);
 
-      // Check if the response has necessary data
+      // Check if the response has the expected structure and data
       if (response.data && response.data.status) {
         const { title, views, like, image, dl_link } = response.data.result;
 
@@ -29,7 +29,8 @@ const xvdl = async (m, gss) => {
           const imageResponse = await axios.get(image, { responseType: 'arraybuffer' });
           const imagePath = `./${Date.now()}-thumbnail.jpg`;
           fs.writeFileSync(imagePath, imageResponse.data);
-        } catch {
+        } catch (error) {
+          console.error('Error downloading thumbnail:', error.message);
           return m.reply('Failed to download the video thumbnail. Please check the image URL.');
         }
 
@@ -38,7 +39,8 @@ const xvdl = async (m, gss) => {
           const videoResponse = await axios.get(dl_link, { responseType: 'arraybuffer' });
           const videoPath = `./${Date.now()}.mp4`;
           fs.writeFileSync(videoPath, videoResponse.data);
-        } catch {
+        } catch (error) {
+          console.error('Error downloading video:', error.message);
           return m.reply('Failed to download the video. Please check the download link.');
         }
 
@@ -54,10 +56,12 @@ const xvdl = async (m, gss) => {
       } else {
         m.reply('Failed to fetch video data. The video might not exist or the URL is invalid. Please check and try again.');
       }
-    } catch {
+    } catch (error) {
+      console.error('API fetch error:', error.message);
       m.reply('An error occurred while fetching video data. Please check the API endpoint or your internet connection.');
     }
-  } catch {
+  } catch (error) {
+    console.error('Command processing error:', error.message);
     m.reply('An error occurred while processing the command. Please try again.');
   }
 };
