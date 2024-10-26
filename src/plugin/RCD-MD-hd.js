@@ -24,44 +24,43 @@ const xvdl = async (m, gss) => {
       if (response.data && response.data.status) {
         const { title, views, like, image, dl_link } = response.data.result;
 
+        // Reply with the video details
+        await m.reply(`📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n\nFetching the video and thumbnail, please wait...`);
+
         // Download video thumbnail image
         try {
           const imageResponse = await axios.get(image, { responseType: 'arraybuffer' });
           const imagePath = `./${Date.now()}-thumbnail.jpg`;
           fs.writeFileSync(imagePath, imageResponse.data);
-        } catch (error) {
-          console.error('Error downloading thumbnail:', error.message);
+
+          // Send the thumbnail image with caption
+          await m.reply({ image: { path: imagePath }, caption: `📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n🔗 *Download Link*: [Click Here](${dl_link})` });
+
+          // Clean up thumbnail file
+          fs.unlinkSync(imagePath);
+        } catch {
           return m.reply('Failed to download the video thumbnail. Please check the image URL.');
         }
 
-        // Download the video file
+        // Download the video file (optional)
         try {
           const videoResponse = await axios.get(dl_link, { responseType: 'arraybuffer' });
           const videoPath = `./${Date.now()}.mp4`;
           fs.writeFileSync(videoPath, videoResponse.data);
-        } catch (error) {
-          console.error('Error downloading video:', error.message);
+
+          // Clean up video file after use (uncomment below line if you want to delete the file after use)
+          fs.unlinkSync(videoPath);
+        } catch {
           return m.reply('Failed to download the video. Please check the download link.');
         }
 
-        // Construct the caption with views, likes, and download link
-        const caption = `📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n🔗 *Download Link*: [Click Here](${dl_link})`;
-
-        // Send the video thumbnail with caption
-        await m.reply({ image: { path: imagePath }, caption });
-
-        // Clean up temporary files
-        fs.unlinkSync(imagePath);
-        fs.unlinkSync(videoPath);
       } else {
         m.reply('Failed to fetch video data. The video might not exist or the URL is invalid. Please check and try again.');
       }
-    } catch (error) {
-      console.error('API fetch error:', error.message);
+    } catch {
       m.reply('An error occurred while fetching video data. Please check the API endpoint or your internet connection.');
     }
-  } catch (error) {
-    console.error('Command processing error:', error.message);
+  } catch {
     m.reply('An error occurred while processing the command. Please try again.');
   }
 };
