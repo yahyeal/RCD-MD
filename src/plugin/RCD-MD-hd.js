@@ -19,33 +19,28 @@ const xvdl = async (m, gss) => {
     try {
       // Request video data from the API
       const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=${url}`);
-      
+      console.log(response.data); // Log the API response for debugging
+
       // Check if the response has necessary data
-      if (response.data && response.data.result) {
-        const { video: videoUrl, image: imageUrl, views, likes } = response.data.result;
+      if (response.data && response.data.status) {
+        const { title, views, like, image, dl_link } = response.data.result;
 
         // Download video thumbnail image
-        const imageResponse = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+        const imageResponse = await axios.get(image, { responseType: 'arraybuffer' });
         const imagePath = `./${Date.now()}-thumbnail.jpg`;
         fs.writeFileSync(imagePath, imageResponse.data);
 
-        // Download the video file
-        const videoResponse = await axios.get(videoUrl, { responseType: 'arraybuffer' });
-        const videoPath = `./${Date.now()}.mp4`;
-        fs.writeFileSync(videoPath, videoResponse.data);
-
-        // Construct the caption with views and likes
-        const caption = `Video Details:\n\n📊 Views: ${views}\n❤️ Likes: ${likes}`;
+        // Construct the caption with views, likes, and download link
+        const caption = `📹 *Title*: ${title}\n\n📊 *Views*: ${views}\n❤️ *Likes*: ${like}\n🔗 *Download Link*: [Click Here](${dl_link})`;
 
         // Send the video thumbnail with caption
         await m.reply({ image: { path: imagePath }, caption });
 
-        // Send the video file
-        await m.reply('Here is your video:', { filePath: videoPath, mimetype: 'video/mp4' });
+        // Optionally, send the actual video link
+        m.reply(`You can also download the video directly using this link: ${dl_link}`);
 
         // Clean up temporary files
         fs.unlinkSync(imagePath);
-        fs.unlinkSync(videoPath);
       } else {
         m.reply('Could not retrieve the video. Please check the URL and try again.');
       }
