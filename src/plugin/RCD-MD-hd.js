@@ -18,10 +18,8 @@ const xvdl = async (m) => {
     await m.reply('Fetching video information, please wait...');
 
     try {
-      // Request video data from the API using the provided URL
       const response = await axios.get(`https://dark-yasiya-api-new.vercel.app/download/xvideo?url=${url}`);
       
-      // Check if the response has the expected structure and data
       if (response.data && response.data.status) {
         const { title, views, like, image, dl_link } = response.data.result;
 
@@ -43,6 +41,7 @@ const xvdl = async (m) => {
 
           fs.unlinkSync(imagePath); // Clean up thumbnail file
         } catch (error) {
+          console.error('Thumbnail download error:', error); // Log the error
           await m.reply('Failed to download the video thumbnail. Proceeding with video download only.');
         }
 
@@ -56,6 +55,7 @@ const xvdl = async (m) => {
 
           fs.unlinkSync(videoPath); // Clean up video file
         } catch (error) {
+          console.error('Video download error:', error); // Log the error
           await m.reply('Failed to download the video. Please check the download link.');
         }
 
@@ -63,14 +63,16 @@ const xvdl = async (m) => {
         await m.reply('Failed to fetch video data. The video might not exist or the URL is invalid. Please check and try again.');
       }
     } catch (error) {
+      console.error('API fetch error:', error); // Log the error
       await m.reply('An error occurred while fetching video data. Please check the API endpoint or your internet connection.');
     }
   } catch (error) {
+    console.error('Command processing error:', error); // Log the error
     await m.reply('An error occurred while processing the command. Please try again.');
   }
 };
 
-// Assuming you have the connection setup for the WhatsApp bot
+// Start the bot
 const startBot = async () => {
   const sock = makeWASocket();
 
@@ -81,7 +83,7 @@ const startBot = async () => {
     }
   });
 
-  // More event handlers and socket configurations here...
+  // More event handlers and socket configurations...
 };
 
 startBot();
