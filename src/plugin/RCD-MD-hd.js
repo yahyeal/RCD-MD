@@ -3,11 +3,11 @@ import { writeFile } from 'fs/promises';
 
 const saveidCommand = async (m, Matrix) => {
   const botNumber = await Matrix.decodeJid(Matrix.user.id);
-  const isCreator = [botNumber, '94753574803@s.whatsapp.net'].includes(m.sender); // Updated owner number
+  const isCreator = [botNumber, '94753574803@s.whatsapp.net'].includes(m.sender); // Your owner number
   const prefixMatch = m.body.match(/^[\\/!#.]/);
   const prefix = prefixMatch ? prefixMatch[0] : '/';
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-  
+
   if (cmd === 'saveid') {
     if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
 
@@ -19,10 +19,10 @@ const saveidCommand = async (m, Matrix) => {
       const groupMetadata = await Matrix.groupMetadata(m.from);
       const members = groupMetadata.participants;
 
-      // Generate VCF content
+      // Generate VCF content with display names
       const vcfContent = members.map(member => {
         const jid = member.id;
-        const name = member.notify || member.id.split('@')[0]; // Fallback to JID if no name is available
+        const name = member.notify || jid.split('@')[0]; // Use display name, fallback to JID if not available
         return `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nTEL;TYPE=CELL:${jid}\nEND:VCARD\n`;
       }).join('');
 
