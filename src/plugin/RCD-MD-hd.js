@@ -19,16 +19,19 @@ const saveidCommand = async (m, Matrix) => {
       const groupMetadata = await Matrix.groupMetadata(m.from);
       const members = groupMetadata.participants;
 
-      // Generate VCF content with display names
-      const vcfContent = members.map(member => {
-        const jid = member.id;
-        const name = member.notify || jid.split('@')[0]; // Use display name, fallback to JID if not available
-        return `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nTEL;TYPE=CELL:${jid}\nEND:VCARD\n`;
-      }).join('');
+      // Generate VCF content using pushname for each member
+      const vcfContent = await Promise.all(
+        members.map(async member => {
+          const jid = member.id;
+          const contact = await Matrix.fetchContact(jid); // Fetching contact to get the pushname
+          const name = contact.pushname || jid.split('@')[0]; // Use pushname, fallback to JID if not available
+          return `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nTEL;TYPE=CELL:${jid}\nEND:VCARD\n`;
+        })
+      );
 
       // Create a VCF file
       const vcfFilePath = './contacts.vcf';
-      await writeFile(vcfFilePath, vcfContent);
+      await writeFile(vcfFilePath, vcfContent.join(''));
       
       // Send the VCF file back to the group
       await Matrix.sendMessage(m.from, { document: { url: vcfFilePath }, mimetype: 'text/vcard', fileName: 'contacts.vcf' }, { quoted: m });
