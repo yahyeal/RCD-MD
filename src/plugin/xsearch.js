@@ -17,15 +17,31 @@ const handleXvidCommand = async (m, gss) => {
     const response = await axios.get(apiUrl);
 
     if (response.data && response.data.results && response.data.results.length > 0) {
-      const results = response.data.results.map((item, index) => 
-        `*${index + 1}. ${item.title || "No Title"}*\n` +
-        `Duration: ${item.duration || "N/A"}\n` +
-        `Quality: ${item.quality || "N/A"}\n` +
-        `Thumbnail: ${item.thumb || "N/A"}\n` +
-        `URL: ${item.url || "N/A"}\n`
-      ).join('\n\n');
-      
-      await gss.sendMessage(m.from, { text: `Search results for "${query}":\n\n${results}` }, { quoted: m });
+      const results = response.data.results.slice(0, 10);  // Limit to 10 results
+
+      for (let i = 0; i < results.length; i++) {
+        const item = results[i];
+        
+        // Format the message content
+        const messageText = 
+          `*${i + 1}. ${item.title || "No Title"}*\n` +
+          `Duration: ${item.duration || "N/A"}\n` +
+          `Quality: ${item.quality || "N/A"}\n` +
+          `URL: ${item.url || "N/A"}`;
+
+        // Send message with thumbnail if available
+        if (item.thumb) {
+          await gss.sendMessage(m.from, 
+            { 
+              image: { url: item.thumb },
+              caption: messageText 
+            }, 
+            { quoted: m }
+          );
+        } else {
+          await gss.sendMessage(m.from, { text: messageText }, { quoted: m });
+        }
+      }
     } else {
       await gss.sendMessage(m.from, { text: 'No results found.' }, { quoted: m });
     }
