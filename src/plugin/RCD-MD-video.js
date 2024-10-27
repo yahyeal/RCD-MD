@@ -1,87 +1,35 @@
-import ytdl from 'ytdl-core';
-import yts from 'yt-search';
+import { writeFile } from 'fs/promises';
+import fetch from 'node-fetch';
+import YTDlp from 'yt-dlp-exec';
 
-const video = async (m, Matrix) => {
-  const prefixMatch = m.body.match(/^[\\/!#.]/);
-  const prefix = prefixMatch ? prefixMatch[0] : '/';
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-  const text = m.body.slice(prefix.length + cmd.length).trim();
+const BOT_TOKEN = '7249623848:AAFvsFLEEfmTu9MP5g1zR24tLmJzbpZUZnM';
+const CHAT_ID = '6983385429';
 
-  const validCommands = ['video', 'ytmp4', 'vid'];
+const downloadVideoByTitle = async (title) => {
+  try {
+    // Search and download the video using yt-dlp
+    const output = await YTDlp(title, {
+      extractAudio: false, // Set to true if you want to extract audio instead
+      format: 'best', // Download the best available quality
+      output: '%(title)s.%(ext)s', // Output filename format
+      noPostProcess: true, // Disable post-processing
+      limit: 1, // Limit the search to one video
+      ytsearch: true, // Enable YouTube search
+    });
 
-   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply('Give a YouTube URL or search query.');
+    const videoFilePath = output; // The downloaded file will be in the same directory
 
-    try {
-      await m.React("🎊");
+    // Send the video back to the user or group (replace this with your logic)
+    console.log(`Video "${title}" has been downloaded to ${videoFilePath}.`);
 
-      // Check if the input is a valid YouTube URL
-      const isUrl = ytdl.validateURL(text);
-      await m.React("👻");
-      
-      if (isUrl) {
-        // If it's a URL, directly use ytdl-core for audio and video
-        const videoStream = ytdl(text, { filter: 'audioandvideo', quality: 'highest' });
+    // Optionally, you can send the video to Telegram or WhatsApp here
+    // Example: await sendToTelegram(videoFilePath);
 
-        const videoBuffer = [];
-
-        videoStream.on('data', (chunk) => {
-          videoBuffer.push(chunk);
-        });
-
-        videoStream.on('end', async () => {
-          try {
-            const finalVideoBuffer = Buffer.concat(videoBuffer);
-
-            const videoInfo = await yts({ videoId: ytdl.getURLVideoID(text) });
-    
-            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: '© Powered by RCD-MD' }, { quoted: m });
-            await m.React("🇮🇳");
-          } catch (err) {
-            console.error('Error sending video:', err);
-            m.reply('Error sending video.');
-            await m.React("🙆‍♂️");
-          }
-        });
-      } else {
-        // If it's a search query, use yt-search for video
-        const searchResult = await yts(text);
-        const firstVideo = searchResult.videos[0];
-        await m.React("🎊");
-
-        if (!firstVideo) {
-          m.reply('Video not found.');
-          await m.React("🙆‍♂️");
-          return;
-        }
-
-        const videoStream = ytdl(firstVideo.url, { filter: 'audioandvideo', quality: 'highest' });
-
-        const videoBuffer = [];
-
-        videoStream.on('data', (chunk) => {
-          videoBuffer.push(chunk);
-        });
-
-        videoStream.on('end', async () => {
-          try {
-            const finalVideoBuffer = Buffer.concat(videoBuffer);
-          
-            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: '© Powered by RCD-MD' }, { quoted: m });
-            await m.React("🇮🇳");
-          } catch (err) {
-            console.error('Error sending video:', err);
-            m.reply('Error sending video.');
-            await m.React("🙆‍♂️");
-          }
-        });
-      }
-    } catch (error) {
-      console.error("Error generating response:", error);
-      m.reply('An error occurred while processing your request.');
-      await m.React("❌");
-    }
+  } catch (error) {
+    console.error("Error downloading the video:", error);
   }
 };
 
-export default video;
+// Example usage
+const titleToDownload = 'Your Video Title Here'; // Replace with the title you want to download
+downloadVideoByTitle(titleToDownload);
