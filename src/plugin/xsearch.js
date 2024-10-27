@@ -49,7 +49,7 @@ const handleXvidCommand = async (m, gss) => {
         await gss.sendMessage(m.from, { text: 'No results found.' }, { quoted: m });
       }
     } catch (error) {
-      console.error(error);
+      console.error('Error fetching search results:', error);
       await gss.sendMessage(m.from, { text: 'An error occurred while fetching search results.' }, { quoted: m });
     }
   }
@@ -67,6 +67,9 @@ const handleXvidCommand = async (m, gss) => {
           const downloadApiUrl = `https://api.giftedtech.my.id/api/download/xvideosdl?apikey=gifted&url=${encodeURIComponent(url)}`;
           const downloadResponse = await axios.get(downloadApiUrl);
 
+          // Log the full response for debugging
+          console.log('Download API Response:', downloadResponse.data);
+
           if (downloadResponse.data && downloadResponse.data.url_dl) {
             const videoUrl = downloadResponse.data.url_dl;
             
@@ -79,11 +82,11 @@ const handleXvidCommand = async (m, gss) => {
               { quoted: m }
             );
           } else {
-            await gss.sendMessage(m.from, { text: 'Failed to retrieve the download link.' }, { quoted: m });
+            await gss.sendMessage(m.from, { text: 'Failed to retrieve the download link. Response: ' + JSON.stringify(downloadResponse.data) }, { quoted: m });
           }
         } catch (error) {
-          console.error(error);
-          await gss.sendMessage(m.from, { text: 'Failed to download the video.' }, { quoted: m });
+          console.error('Error downloading video:', error);
+          await gss.sendMessage(m.from, { text: 'Failed to download the video. Error: ' + error.message }, { quoted: m });
         }
       } else {
         await gss.sendMessage(m.from, { text: 'Could not find the video URL.' }, { quoted: m });
