@@ -67,8 +67,8 @@ const handleXvidCommand = async (m, gss) => {
           const downloadApiUrl = `https://api.giftedtech.my.id/api/download/xvideosdl?apikey=gifted&url=${encodeURIComponent(url)}`;
           const downloadResponse = await axios.get(downloadApiUrl);
 
-          if (downloadResponse.data && downloadResponse.data.download) {
-            const videoUrl = downloadResponse.data.download;
+          if (downloadResponse.data && downloadResponse.data.url_dl) {
+            const videoUrl = downloadResponse.data.url_dl;
             
             // Send the video using the download link
             await gss.sendMessage(m.from, 
