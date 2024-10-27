@@ -70,9 +70,10 @@ const handleXvidCommand = async (m, gss) => {
           // Log the full response for debugging
           console.log('Download API Response:', downloadResponse.data);
 
-          if (downloadResponse.data && downloadResponse.data.url_dl) {
-            const videoUrl = downloadResponse.data.url_dl;
-            
+          // Check if the response has the expected structure
+          if (downloadResponse.data && downloadResponse.data.success && downloadResponse.data.result) {
+            const videoUrl = downloadResponse.data.result.url_dl; // Access the nested url_dl
+
             // Send the video using the download link
             await gss.sendMessage(m.from, 
               { 
