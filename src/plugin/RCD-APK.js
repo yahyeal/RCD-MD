@@ -6,57 +6,7 @@ const { generateWAMessageFromContent, proto } = pkg;
 const ownerNumber = '94753574803@s.whatsapp.net';
 import config from '../../config.cjs';
 
-// Get total memory and free memory in bytes
-const totalMemoryBytes = os.totalmem();
-const freeMemoryBytes = os.freemem();
-
-// Define unit conversions
-const byteToKB = 1 / 1024;
-const byteToMB = byteToKB / 1024;
-const byteToGB = byteToMB / 1024;
-
-// Function to format bytes to a human-readable format
-function formatBytes(bytes) {
-  if (bytes >= Math.pow(1024, 3)) {
-    return (bytes * byteToGB).toFixed(2) + ' GB';
-  } else if (bytes >= Math.pow(1024, 2)) {
-    return (bytes * byteToMB).toFixed(2) + ' MB';
-  } else if (bytes >= 1024) {
-    return (bytes * byteToKB).toFixed(2) + ' KB';
-  } else {
-    return bytes.toFixed(2) + ' bytes';
-  }
-}
-
-// Bot Process Time
-const uptime = process.uptime();
-const day = Math.floor(uptime / (24 * 3600));
-const hours = Math.floor((uptime % (24 * 3600)) / 3600);
-const minutes = Math.floor((uptime % 3600) / 60);
-const seconds = Math.floor(uptime % 60);
-
-// Uptime message
-const uptimeMessage = `*I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
-const runMessage = `*☀️ ${day} Day*\n*🕐 ${hours} Hour*\n*⏰ ${minutes} Minutes*\n*⏱️ ${seconds} Seconds*\n`;
-
-const xtime = moment.tz("Asia/Colombo").format("HH:mm:ss");
-const xdate = moment.tz("Asia/Colombo").format("DD/MM/YYYY");
-const time2 = moment().tz("Asia/Colombo").format("HH:mm:ss");
-let pushwish = "";
-
-if (time2 < "05:00:00") {
-  pushwish = `Good Morning 🌄`;
-} else if (time2 < "11:00:00") {
-  pushwish = `Good Morning 🌄`;
-} else if (time2 < "15:00:00") {
-  pushwish = `Good Afternoon 🌅`;
-} else if (time2 < "18:00:00") {
-  pushwish = `Good Evening 🌃`;
-} else if (time2 < "19:00:00") {
-  pushwish = `Good Evening 🌃`;
-} else {
-  pushwish = `Good Night 🌌`;
-}
+// Other existing code...
 
 const test = async (m, Matrix) => {
   let selectedListId;
@@ -139,7 +89,7 @@ const test = async (m, Matrix) => {
                           {
                             header: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
                             title: "ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪɴᴋ ᴅᴇᴠɪᴄᴇ ꜱᴘᴀᴍ ᴀᴘᴋ",
-                            description: "ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ꜱᴇɴᴅ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ ᴀʟᴇʀᴛ",
+                            description: "ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ꜱᴇɴᴅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ᴀʟᴇʀᴛ",
                             id: "Apk 1"
                           },
                           {
@@ -176,39 +126,41 @@ const test = async (m, Matrix) => {
   }
 
   if (selectedId === "Apk 1") {
-    const str = `*hey ${m.pushName}* 
+    const imageUrl = 'https://files.catbox.moe/yqn6hf.jpg'; // Add your image URL here
+    const fileBuffer = fs.readFileSync('./src/spam.apk'); // Path to the file to send (e.g., PDF)
+    
+    const caption = `*Hey ${m.pushName}* 
         
 *𝗗𝗘𝗫𝗧𝗘𝗥 ┃ MODZ LINK DEVICE SPAM APK* ♨
 
-*https://rb.gy/v1yd7v*
+[Download APK](https://rb.gy/v1yd7v) - *Enjoy!*
 
-*[ DOWNLOAD APK AND ENJOY ]*
-
-*https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp*
-
-*[ WATCH TUTORIAL VIDEO 📽️ ]*
+[Watch Tutorial](https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp) 📽️
 
 *DEXTER MODZ ANDROID APK*
-  `.trim();
-    return m.reply(str);
+`.trim();
+
+    await Matrix.sendMessage(m.from, { image: { url: imageUrl }, caption: caption });
+    await Matrix.sendMessage(m.from, { document: fileBuffer, mimetype: 'application/apk', fileName: 'Dexter-Modz-Spam.Apk' });
   }
 
   if (selectedId === "Apk 2") {
-    const str = `*hey ${m.pushName}* 
+    const imageUrl = 'https://files.catbox.moe/grrtxl.jpg'; // Add your image URL here
+    const fileBuffer = fs.readFileSync('./src/saver.apk'); // Path to the file to send (e.g., PDF)
+
+    const caption = `*Hey ${m.pushName}* 
         
 *𝗗𝗘𝗫𝗧𝗘𝗥 ┃ WHATSAPP NUMBER AUTO SAVE APK* ♨
 
-*https://rb.gy/h0vixu*
+[Download APK](https://rb.gy/h0vixu) - *Enjoy!*
 
-*[ DOWNLOAD APK AND ENJOY ]*
-
-*https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp*
-
-*[ WATCH TUTORIAL VIDEO 📽️ ]*
+[Watch Tutorial](https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp) 📽️
 
 *DEXTER MODZ ANDROID APK*
-  `.trim();
-    return m.reply(str);
+`.trim();
+
+    await Matrix.sendMessage(m.from, { image: { url: imageUrl }, caption: caption });
+    await Matrix.sendMessage(m.from, { document: fileBuffer, mimetype: 'application/apk', fileName: 'Dexter-Modz-AutoSave.apk' });
   }
 };
 
