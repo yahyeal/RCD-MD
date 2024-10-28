@@ -27,14 +27,15 @@ function formatBytes(bytes) {
     return bytes.toFixed(2) + ' bytes';
   }
 }
+
 // Bot Process Time
 const uptime = process.uptime();
-const day = Math.floor(uptime / (24 * 3600)); // Calculate days
-const hours = Math.floor((uptime % (24 * 3600)) / 3600); // Calculate hours
-const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
-const seconds = Math.floor(uptime % 60); // Calculate seconds
+const day = Math.floor(uptime / (24 * 3600));
+const hours = Math.floor((uptime % (24 * 3600)) / 3600);
+const minutes = Math.floor((uptime % 3600) / 60);
+const seconds = Math.floor(uptime % 60);
 
-// Uptime
+// Uptime message
 const uptimeMessage = `*I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
 const runMessage = `*☀️ ${day} Day*\n*🕐 ${hours} Hour*\n*⏰ ${minutes} Minutes*\n*⏱️ ${seconds} Seconds*\n`;
 
@@ -66,34 +67,28 @@ const test = async (m, Matrix) => {
     if (paramsJson) {
       const params = JSON.parse(paramsJson);
       selectedListId = params.id;
-     // console.log(selectedListId);
     }
   }
   const selectedId = selectedListId || selectedButtonId;
-  
+
   const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-       
-       const mode = config.MODE === 'public' ? 'public' : 'private';
-       const pref = config.PREFIX;
-           
-        const validCommands = ['apk', 'dexter-modz', 'owner'];
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+  const mode = config.MODE === 'public' ? 'public' : 'private';
+  const pref = config.PREFIX;
+
+  const validCommands = ['apk', 'dexter-modz', 'owner'];
 
   if (validCommands.includes(cmd)) {
-    let msg = generateWAMessageFromContent(m.from, {
+    const msg = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
         message: {
-          "messageContextInfo": {
-            "deviceListMetadata": {},
-            "deviceListMetadataVersion": 2
-          },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
 │🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ʀᴄᴅ-ᴍᴅ*
 │📍 ᴠᴇʀꜱɪᴏɴ: 2.1.0
 │👨‍💻 ᴏᴡɴᴇʀ : *ʀᴄᴅ ᴛᴇᴀᴍ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
+│👤 ɴᴜᴍʙᴇʀ: ${ownerNumber}
 │📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 │🛡 ᴍᴏᴅᴇ: *${mode}*
 │💫 ᴘʀᴇғɪx: [${pref}]
@@ -103,81 +98,85 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
               text: "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴄᴅ-ᴍᴅ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ video : fs.readFileSync('./src/RCD-APK.mp4')}, { upload: Matrix.waUploadToServer})), 
-                  title: ``,
-                  gifPlayback: true,
-                  subtitle: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
-                  hasMediaAttachment: false  
-                }),
+              ...(await prepareWAMessageMedia({ video: fs.readFileSync('./src/RCD-APK.mp4') }, { upload: Matrix.waUploadToServer })),
+              title: '',
+              gifPlayback: true,
+              subtitle: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
+              hasMediaAttachment: false
+            }),
             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
               buttons: [
                 {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "ALIVE ?",
-            id: `${prefix}alive`
-          })
-        },
-        {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "BOT INFO ❔",
-            id: `BOT INFO`
-          })
-        },
-        {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "MENU LIST ❔",
-            id: `${prefix}menu`
-          })
-        },
-                {
-                  "name": "single_select",
-                  "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴀᴘᴋ",
-                 "sections":
-                   [{
-                    "title":"ᴅᴇxᴛᴇʀ ᴍᴏᴅᴢ ᴀɴᴅ ᴀᴘᴋ ʟɪꜱᴛ ",
-                    "highlight_label":"ᴀʟʟ ᴍᴇɴᴜ",
-                    "rows":[
-                      {
-                       "header":"𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
-                       "title":"ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪɴᴋ ᴅᴇᴠɪᴄᴇ ꜱᴘᴀᴍ ᴀᴘᴋ",
-                       "description":"ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ꜱᴇɴᴅ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ ᴀʟᴇʀᴛ",
-                       "id":"Apk 1"
-                      },
-                      {
-                        "header":"𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
-                        "title":"𝐒𝐀𝐕𝐄 𝐈𝐃",
-                        "description":"ᴡʜᴀᴛꜱᴀᴘᴘ ɴᴜᴍʙᴇʀ ᴀᴜᴛᴏ ꜱᴀᴠᴇ ᴀᴘᴋ",
-                        "id":"Apk 2 "
-                      }
-                    ]}
-                  ]}`
+                  name: "quick_reply",
+                  buttonParamsJson: JSON.stringify({
+                    display_text: "ALIVE ?",
+                    id: `${prefix}alive`
+                  })
                 },
-              ],
+                {
+                  name: "quick_reply",
+                  buttonParamsJson: JSON.stringify({
+                    display_text: "BOT INFO ❔",
+                    id: `BOT INFO`
+                  })
+                },
+                {
+                  name: "quick_reply",
+                  buttonParamsJson: JSON.stringify({
+                    display_text: "MENU LIST ❔",
+                    id: `${prefix}menu`
+                  })
+                },
+                {
+                  name: "single_select",
+                  buttonParamsJson: JSON.stringify({
+                    title: "ᴛᴀᴘ ʜᴇʀᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴀᴘᴋ",
+                    sections: [
+                      {
+                        title: "ᴅᴇxᴛᴇʀ ᴍᴏᴅᴢ ᴀɴᴅ ᴀᴘᴋ ʟɪꜱᴛ",
+                        highlight_label: "ᴀʟʟ ᴍᴇɴᴜ",
+                        rows: [
+                          {
+                            header: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
+                            title: "ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪɴᴋ ᴅᴇᴠɪᴄᴇ ꜱᴘᴀᴍ ᴀᴘᴋ",
+                            description: "ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ꜱᴇɴᴅ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ ᴀʟᴇʀᴛ",
+                            id: "Apk 1"
+                          },
+                          {
+                            header: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗜𝗗 🔎",
+                            title: "𝐒𝐀𝐕𝐄 𝐈𝐃",
+                            description: "ᴡʜᴀᴛꜱᴀᴘᴘ ɴᴜᴍʙᴇʀ ᴀᴜᴛᴏ ꜱᴀᴠᴇ ᴀᴘᴋ",
+                            id: "Apk 2"
+                          }
+                        ]
+                      }
+                    ]
+                  })
+                }
+              ]
             }),
             contextInfo: {
-                  mentionedJid: "94753574803@whatsapp.net", 
-                  forwardingScore: 999,
-                  isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363286758767913@newsletter',
+              mentionedJid: [ownerNumber],
+              forwardingScore: 999,
+              isForwarded: true,
+              forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363286758767913@newsletter',
                 newsletterName: "RCD-MD WHATSAPP CHANNEL",
-                  serverMessageId: 143
-                }
+                serverMessageId: 143
               }
-          }),
-        },
-      },
+            }
+          })
+        }
+      }
     }, {});
 
-    await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
+    await Matrix.relayMessage(m.from, msg.message, {
       messageId: msg.key.id
     });
   }
-      if (selectedId == "Apk 1") {
-        const str = `*hey ${m.pushName}* 
+
+  if (selectedId === "Apk 1") {
+    const str = `*hey ${m.pushName}* 
         
 *𝗗𝗘𝗫𝗧𝗘𝗥 ┃ MODZ LINK DEVICE SPAM APK* ♨
 
@@ -189,73 +188,28 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 
 *[ WATCH TUTORIAL VIDEO 📽️ ]*
 
-*DEXTER MODZ RCD TEAM IDEA*😾
-*DEXTER PROGRAMER*`;
-        let fgg = {
-            key: {
-                fromMe: false,
-                participant: `0@s.whatsapp.net`,
-                remoteJid: "status@broadcast"
-            },
-            message: {
-                contactMessage: {
-                    displayName: `RCD MD`,
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'RCD MD'\nitem1.TEL;waid=${
-                        ownerNumber.split("@")[0]
-                    }:${
-                        ownerNumber.split("@")[0]
-                    }\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-                }
-            }
-        };
-       let { key } = await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/APK-SPAM.jpg'), 
-  caption: str, 
-  contextInfo: { 
-                  mentionedJid: [ownerNumber], 
-                  forwardingScore: 999,
-                  isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363286758767913@newsletter',
-                newsletterName: "RCD-MD WHATSAPP CHANNEL",
-                  serverMessageId: 143
-                }
-              }
-}, {
-  quoted: fgg
-});
-}
-   if ( selectedId == "Apk 2") {
-     const str = `*hey ${m.pushName}* 
-        
-*𝗗𝗘𝗫𝗧𝗘𝗥 ┃ MODZ LINK DEVICE SPAM APK* ♨
+*DEXTER MODZ ANDROID APK*
+  `.trim();
+    return m.reply(str);
+  }
 
-*https://www.mediafire.com/file/5z9t2t9pq8uqh47/%E1%B4%85%E1%B4%87x%E1%B4%9B%E1%B4%87%CA%80+%EA%9C%B1%E1%B4%80%E1%B4%A0%E1%B4%87%CA%80.apk/file?dkey=18xv65rrvvk&r=1241*
+  if (selectedId === "Apk 2") {
+    const str = `*hey ${m.pushName}* 
+        
+*𝗗𝗘𝗫𝗧𝗘𝗥 ┃ WHATSAPP NUMBER AUTO SAVE APK* ♨
+
+*https://rb.gy/h0vixu*
 
 *[ DOWNLOAD APK AND ENJOY ]*
 
-*https://youtu.be/3mEhUIeqr0Q?si=SrrrG6SrpeOoASmv*
+*https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp*
 
 *[ WATCH TUTORIAL VIDEO 📽️ ]*
 
-*DEXTER MODZ RCD TEAM IDEA*😾
-*DEXTER PROGRAMER*`
-await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/APK-SAVER.jpg'), 
-  caption: str, 
-  contextInfo: {
-                  mentionedJid: [ownerNumber], 
-                  forwardingScore: 999,
-                  isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363286758767913@newsletter',
-                  newsletterName: "RCD-MD WHATSAPP CHANNEL",
-                  serverMessageId: 143
-                }
-              }
-}, {
-  quoted: m
-});
+*DEXTER MODZ ANDROID APK*
+  `.trim();
+    return m.reply(str);
+  }
 };
 
 export default test;
