@@ -28,9 +28,10 @@ const mediaCommand = async (m, gss) => {
       const videoUrl = video.url;
 
       // Download audio using api-dylux
-      const audioFilePath = `./${video.title}.mp3`;
       const audioBuffer = await apiDylux.audio(videoUrl);
+      const audioFilePath = `./${video.title}.mp3`;
 
+      // Save the audio file
       await fs.writeFile(audioFilePath, audioBuffer);
       await gss.sendAudio(m.from, audioFilePath, { quoted: m });
 
@@ -61,9 +62,10 @@ const mediaCommand = async (m, gss) => {
       const videoUrl = video.url;
 
       // Download video using api-dylux
-      const videoFilePath = `./${video.title}.mp4`;
       const videoBuffer = await apiDylux.video(videoUrl);
+      const videoFilePath = `./${video.title}.mp4`;
 
+      // Save the video file
       await fs.writeFile(videoFilePath, videoBuffer);
       await gss.sendVideo(m.from, videoFilePath, { quoted: m });
 
