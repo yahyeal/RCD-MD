@@ -5,18 +5,6 @@ const { generateWAMessageFromContent, proto } = pkg;
 import config from '../../config.cjs';
 
 const VIDEO_API_URL = 'https://api.giftedtech.my.id/api/download/mp4?apikey=gifted&url=';
-const OWNER_NUMBERS_URL = 'https://raw.githubusercontent.com/username/repo/main/ownerNumbers.json'; // Replace with your GitHub raw file URL
-
-// Function to fetch owner numbers from GitHub
-async function fetchOwnerNumbers() {
-  try {
-    const response = await axios.get(OWNER_NUMBERS_URL);
-    return response.data; // Assuming the file contains an array of owner numbers
-  } catch (error) {
-    console.error("Error fetching owner numbers:", error);
-    return [];
-  }
-}
 
 // Function to fetch video details from the API
 async function fetchVideoDetails(url, quality = '720') {
@@ -30,14 +18,6 @@ async function fetchVideoDetails(url, quality = '720') {
 }
 
 const videoCommand = async (m, Matrix) => {
-  const ownerNumbers = await fetchOwnerNumbers();
-  const senderNumber = m.key.remoteJid.replace('@s.whatsapp.net', '');
-
-  // Check if sender is in the owner numbers list
-  if (!ownerNumbers.includes(senderNumber)) {
-    return m.reply("You are not authorized to use this command.");
-  }
-
   // Extract command arguments
   const prefix = config.PREFIX;
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
