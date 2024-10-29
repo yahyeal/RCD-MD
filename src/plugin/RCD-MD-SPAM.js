@@ -50,54 +50,9 @@ const spamCommand = async (m, Matrix) => {
     }
     const selectedId = selectedListId || selectedButtonId;
 
-    const msg = generateWAMessageFromContent(m.from, {
-      viewOnceMessage: {
-        message: {
-          interactiveMessage: proto.Message.InteractiveMessage.create({
-            body: proto.Message.InteractiveMessage.Body.create({
-              text: `*Spam Options*
-Choose an option to spam the number ${number} with messages.`
-            }),
-            footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© RCD-MD Bot"
-            }),
-            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-              buttons: [
-                {
-                  name: "single_select",
-                  buttonParamsJson: JSON.stringify({
-                    title: "Spam Options",
-                    sections: [
-                      {
-                        title: "Select an option",
-                        rows: [
-                          {
-                            title: "SPAM 1 (Send 'Hi' 10 times)",
-                            description: "Send 'Hi' message 10 times",
-                            id: "spam_1"
-                          },
-                          {
-                            title: "SPAM 2 (Send 'Bye' 10 times)",
-                            description: "Send 'Bye' message 10 times",
-                            id: "spam_2"
-                          }
-                        ]
-                      }
-                    ]
-                  })
-                }
-              ]
-            }),
-          })
-        }
-      }
-    }, {});
+    // Log selectedId for debugging purposes
+    console.log("Selected ID:", selectedId);
 
-    await Matrix.relayMessage(m.from, msg.message, {
-      messageId: msg.key.id
-    });
-
-    // Handle spam actions based on selected option
     if (selectedId === "spam_1") {
       for (let i = 0; i < 10; i++) {
         await Matrix.sendMessage(`${number}@s.whatsapp.net`, { text: "Hi" });
@@ -112,8 +67,55 @@ Choose an option to spam the number ${number} with messages.`
       return m.reply(`Sent "Bye" 10 times to ${number}`);
     }
 
-    // If no valid spam option is selected
+    // Generate the initial spam options message if no option is selected
     if (!selectedId) {
+      const msg = generateWAMessageFromContent(m.from, {
+        viewOnceMessage: {
+          message: {
+            interactiveMessage: proto.Message.InteractiveMessage.create({
+              body: proto.Message.InteractiveMessage.Body.create({
+                text: `*Spam Options*
+Choose an option to spam the number ${number} with messages.`
+              }),
+              footer: proto.Message.InteractiveMessage.Footer.create({
+                text: "© RCD-MD Bot"
+              }),
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+                buttons: [
+                  {
+                    name: "single_select",
+                    buttonParamsJson: JSON.stringify({
+                      title: "Spam Options",
+                      sections: [
+                        {
+                          title: "Select an option",
+                          rows: [
+                            {
+                              title: "SPAM 1 (Send 'Hi' 10 times)",
+                              description: "Send 'Hi' message 10 times",
+                              id: "spam_1"
+                            },
+                            {
+                              title: "SPAM 2 (Send 'Bye' 10 times)",
+                              description: "Send 'Bye' message 10 times",
+                              id: "spam_2"
+                            }
+                          ]
+                        }
+                      ]
+                    })
+                  }
+                ]
+              }),
+            })
+          }
+        }
+      }, {});
+
+      await Matrix.relayMessage(m.from, msg.message, {
+        messageId: msg.key.id
+      });
+    } else {
       return m.reply("Please select a spam option to proceed.");
     }
   }
