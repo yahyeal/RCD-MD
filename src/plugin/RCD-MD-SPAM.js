@@ -1,11 +1,32 @@
 import moment from 'moment-timezone';
 import fs from 'fs';
 import pkg from '@whiskeysockets/baileys';
+import axios from 'axios';
 const { generateWAMessageFromContent, proto } = pkg;
-const ownerNumber = '94753574803@s.whatsapp.net';
 import config from '../../config.cjs';
 
+const OWNER_NUMBERS_URL = 'https://github.com/rcd-git-hub-official/CLOUD-/raw/refs/heads/main/owner-number.json'; // Replace with your GitHub raw file URL
+
+// Function to fetch owner numbers from GitHub
+async function fetchOwnerNumbers() {
+  try {
+    const response = await axios.get(OWNER_NUMBERS_URL);
+    return response.data; // Assuming the file contains an array of owner numbers
+  } catch (error) {
+    console.error("Error fetching owner numbers:", error);
+    return [];
+  }
+}
+
 const spamCommand = async (m, Matrix) => {
+  const ownerNumbers = await fetchOwnerNumbers();
+  const senderNumber = m.key.remoteJid.replace('@s.whatsapp.net', '');
+
+  // Check if sender is in the owner numbers list
+  if (!ownerNumbers.includes(senderNumber)) {
+    return m.reply("You are not authorized to use this command.");
+  }
+
   let selectedListId;
   const selectedButtonId = m?.message?.templateButtonReplyMessage?.selectedId;
   const interactiveResponseMessage = m?.message?.interactiveResponseMessage;
@@ -24,7 +45,11 @@ const spamCommand = async (m, Matrix) => {
   const number = args[0]; // First argument should be the WhatsApp number
 
   // Check if the command is "spam" and if a number is provided
-  if (cmd === 'spam' && number) {
+  if (cmd === 'spam') {
+    if (!number) {
+      return m.reply("Please provide a WhatsApp number to spam.");
+    }
+
     const msg = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
         message: {
@@ -86,6 +111,11 @@ Choose an option to spam the number ${number} with messages.`
       await Matrix.sendMessage(`${number}@s.whatsapp.net`, { text: "Bye" });
     }
     return m.reply(`Sent "Bye" 10 times to ${number}`);
+  }
+
+  // If no valid spam option is selected
+  if (cmd === 'spam' && !selectedId) {
+    return m.reply("Please select a spam option to proceed.");
   }
 };
 
