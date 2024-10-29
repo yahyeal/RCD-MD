@@ -1,1 +1,192 @@
-(function(_0x327006,_0x3f8573){const _0x4ae1e9=_0x327006();function _0x44b619(_0x2dde26,_0x5bab27){return _0x1461(_0x2dde26-0x4c,_0x5bab27);}while(!![]){try{const _0x5dba41=parseInt(_0x44b619(0x21b,0x215))/0x1*(-parseInt(_0x44b619(0x210,0x228))/0x2)+-parseInt(_0x44b619(0x21f,0x216))/0x3+-parseInt(_0x44b619(0x1f1,0x208))/0x4*(-parseInt(_0x44b619(0x211,0x207))/0x5)+parseInt(_0x44b619(0x209,0x1f4))/0x6*(-parseInt(_0x44b619(0x1f7,0x212))/0x7)+parseInt(_0x44b619(0x22a,0x20a))/0x8*(parseInt(_0x44b619(0x208,0x214))/0x9)+parseInt(_0x44b619(0x1fe,0x20a))/0xa*(-parseInt(_0x44b619(0x1f4,0x20e))/0xb)+parseInt(_0x44b619(0x21a,0x239))/0xc*(parseInt(_0x44b619(0x1fd,0x20c))/0xd);if(_0x5dba41===_0x3f8573)break;else _0x4ae1e9['push'](_0x4ae1e9['shift']());}catch(_0x4ab74c){_0x4ae1e9['push'](_0x4ae1e9['shift']());}}}(_0xd153,0x9f109));function _0x1461(_0x33a2e1,_0x4f5a73){const _0x5b666c=_0xd153();return _0x1461=function(_0x189620,_0x27a1aa){_0x189620=_0x189620-0x19c;let _0x5b7749=_0x5b666c[_0x189620];return _0x5b7749;},_0x1461(_0x33a2e1,_0x4f5a73);}const _0x27a1aa=(function(){let _0x2f8eed=!![];return function(_0x2029c6,_0x3b956f){const _0x1084e1=_0x2f8eed?function(){function _0x139e42(_0x1ac38f,_0x1e95b2){return _0x1461(_0x1ac38f-0x1be,_0x1e95b2);}if(_0x3b956f){const _0x244fec=_0x3b956f[_0x139e42(0x392,0x399)](_0x2029c6,arguments);return _0x3b956f=null,_0x244fec;}}:function(){};return _0x2f8eed=![],_0x1084e1;};}()),_0x189620=_0x27a1aa(this,function(){const _0x31e840=function(){let _0x4a41fe;function _0x3ad809(_0x1ed272,_0x44549c){return _0x1461(_0x1ed272-0x2b8,_0x44549c);}try{_0x4a41fe=Function(_0x3ad809(0x458,0x46f)+_0x3ad809(0x455,0x460)+');')();}catch(_0x5256c6){_0x4a41fe=window;}return _0x4a41fe;},_0x236bb7=_0x31e840(),_0x148a55=_0x236bb7[_0x4c7e17(0x30,0x3a)]=_0x236bb7[_0x4c7e17(0x47,0x3a)]||{},_0x3ee292=[_0x4c7e17(0x40,0x4d),_0x4c7e17(0x81,0x60),_0x4c7e17(0x2c,0x4a),_0x4c7e17(0x72,0x64),_0x4c7e17(0x4f,0x4e),_0x4c7e17(0x5f,0x4b),'trace'];function _0x4c7e17(_0x25fc50,_0x5b85d9){return _0x1461(_0x5b85d9- -0x175,_0x25fc50);}for(let _0x3c3591=0x0;_0x3c3591<_0x3ee292[_0x4c7e17(0x7c,0x58)];_0x3c3591++){const _0x2d03ff=_0x27a1aa[_0x4c7e17(0x36,0x4c)][_0x4c7e17(0x37,0x45)][_0x4c7e17(0x28,0x44)](_0x27a1aa),_0x1c7c9a=_0x3ee292[_0x3c3591],_0x1dd828=_0x148a55[_0x1c7c9a]||_0x2d03ff;_0x2d03ff[_0x4c7e17(0x5b,0x57)]=_0x27a1aa[_0x4c7e17(0x63,0x44)](_0x27a1aa),_0x2d03ff['toString']=_0x1dd828[_0x4c7e17(0x69,0x55)][_0x4c7e17(0x5a,0x44)](_0x1dd828),_0x148a55[_0x1c7c9a]=_0x2d03ff;}});_0x189620();import _0xb06b3b from'../../config.cjs';import _0x453063,{prepareWAMessageMedia}from'@whiskeysockets/baileys';import _0x567b2a from'jimp';const {generateWAMessageFromContent,proto}=_0x453063,alive=async(_0x233b4c,_0x3373f3)=>{const _0x479910=process[_0x190efb(-0xec,-0xd9)](),_0x15bdcb=Math['floor'](_0x479910/(0xe10*0x18)),_0x468dc1=Math[_0x190efb(-0xea,-0xd5)](_0x479910%(0xe10*0x18)/0xe10),_0x28640c=Math[_0x190efb(-0xea,-0xeb)](_0x479910%0xe10/0x3c),_0x542f04=Math[_0x190efb(-0xea,-0xfc)](_0x479910%0x3c),_0x140858=String(_0x15bdcb)[_0x190efb(-0xf5,-0xee)](0x2,'0')+'-'+String(_0x468dc1)[_0x190efb(-0xf5,-0x100)](0x2,'0')+'-'+String(_0x28640c)[_0x190efb(-0xf5,-0xf6)](0x2,'0')+'-'+String(_0x542f04)[_0x190efb(-0xf5,-0xe0)](0x2,'0'),_0x88b024=_0xb06b3b[_0x190efb(-0x10a,-0xe9)],_0x19a19e=_0x233b4c[_0x190efb(-0x100,-0x10b)][_0x190efb(-0xe8,-0xec)](_0x88b024)?_0x233b4c['body']['slice'](_0x88b024[_0x190efb(-0xe6,-0xf9)])[_0x190efb(-0xd6,-0xea)]('\x20')[0x0][_0x190efb(-0x111,-0xf5)]():'',_0x2229de=_0x233b4c[_0x190efb(-0x100,-0xe5)][_0x190efb(-0xd3,-0xd8)](_0x88b024['length']+_0x19a19e[_0x190efb(-0xe6,-0xd3)])[_0x190efb(-0x10f,-0x120)]();function _0x190efb(_0xe77952,_0x5deb2c){return _0x1461(_0xe77952- -0x2b3,_0x5deb2c);}if(['alive',_0x190efb(-0xec,-0xf6),'runtime'][_0x190efb(-0x110,-0x118)](_0x19a19e)){const _0x10f230=0x320,_0x5b64b2=0x1f4,_0x3dbda6=new _0x567b2a(_0x10f230,_0x5b64b2,_0x190efb(-0xed,-0xcd)),_0x56fa33=await _0x567b2a[_0x190efb(-0xd8,-0xb5)](_0x567b2a['FONT_SANS_128_RED']),_0x3e31b2=_0x567b2a[_0x190efb(-0x107,-0xe5)](_0x56fa33,_0x140858),_0x363a47=_0x567b2a[_0x190efb(-0xd7,-0xf2)](_0x56fa33,_0x140858,_0x10f230),_0x521ed1=_0x10f230/0x2-_0x3e31b2/0x2,_0x52ab29=_0x5b64b2/0x2-_0x363a47/0x2;_0x3dbda6[_0x190efb(-0xfe,-0xed)](_0x56fa33,_0x521ed1,_0x52ab29,_0x140858,_0x10f230,_0x567b2a['HORIZONTAL_ALIGN_CENTER']|_0x567b2a[_0x190efb(-0xfb,-0x114)]);const _0x539e26=await _0x3dbda6[_0x190efb(-0xdc,-0xc2)](_0x567b2a[_0x190efb(-0xff,-0xdc)]),_0x2770f6=_0x190efb(-0xe2,-0xe2)+_0x15bdcb+_0x190efb(-0xd0,-0xdd)+_0x468dc1+_0x190efb(-0xd2,-0xd6)+_0x28640c+_0x190efb(-0xfd,-0x121)+_0x542f04+'\x20Second(s)*\x0a_________________________________________\x0a',_0xd216c0=[{'name':_0x190efb(-0xe3,-0xe6),'buttonParamsJson':JSON[_0x190efb(-0xfc,-0x113)]({'display_text':_0x190efb(-0x115,-0x130),'id':_0x88b024+_0x190efb(-0x112,-0xf8)})},{'name':_0x190efb(-0xe3,-0x100),'buttonParamsJson':JSON[_0x190efb(-0xfc,-0x10e)]({'display_text':_0x190efb(-0x10d,-0xf4),'id':_0x88b024+'repo'})},{'name':'single_select','buttonParamsJson':_0x190efb(-0xdb,-0xe0)}],_0x4a56a0=generateWAMessageFromContent(_0x233b4c['from'],{'viewOnceMessage':{'message':{'messageContextInfo':{'deviceListMetadata':{},'deviceListMetadataVersion':0x2},'interactiveMessage':proto['Message']['InteractiveMessage'][_0x190efb(-0xf8,-0x111)]({'body':proto[_0x190efb(-0x106,-0x106)][_0x190efb(-0xd4,-0xda)][_0x190efb(-0xd1,-0xd8)]['create']({'text':_0x2770f6}),'footer':proto[_0x190efb(-0x106,-0x119)]['InteractiveMessage'][_0x190efb(-0x114,-0x12a)][_0x190efb(-0xf8,-0xe4)]({'text':_0x190efb(-0x10c,-0xfe)}),'header':proto[_0x190efb(-0x106,-0x12a)][_0x190efb(-0xd4,-0xcc)][_0x190efb(-0xe1,-0xf1)][_0x190efb(-0xf8,-0xe5)]({...await prepareWAMessageMedia({'image':_0x539e26},{'upload':_0x3373f3[_0x190efb(-0xd9,-0xee)]}),'title':'','gifPlayback':![],'subtitle':'','hasMediaAttachment':![]}),'nativeFlowMessage':proto[_0x190efb(-0x106,-0x106)][_0x190efb(-0xd4,-0xe5)][_0x190efb(-0xdd,-0xc2)][_0x190efb(-0xf8,-0xe2)]({'buttons':_0xd216c0}),'contextInfo':{'quotedMessage':_0x233b4c[_0x190efb(-0x109,-0xff)],'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x190efb(-0x103,-0x119),'newsletterName':_0x190efb(-0x105,-0xf1),'serverMessageId':0x8f}}})}}},{});await _0x3373f3[_0x190efb(-0x117,-0x100)](_0x4a56a0['key'][_0x190efb(-0xeb,-0x106)],_0x4a56a0[_0x190efb(-0x109,-0xef)],{'messageId':_0x4a56a0['key']['id']});}};export default alive;function _0xd153(){const _0x109c21=['VERTICAL_ALIGN_MIDDLE','bind','prototype','create','5780817krryMe','881388kYQgYH','padStart','info','table','constructor','log','exception','22KnnesI','180JlAxIa','white','uptime','remoteJid','floor','toString','startsWith','__proto__','length','43980tpeVjR','75083HHyQUF','quick_reply','*🤖\x20RCD-MD\x20Status\x20Overview*\x0a_________________________________________\x0a\x0a*📆\x20','Header','3147519oJZWUO','apply','warn','NativeFlowMessage','getBufferAsync','{\x22title\x22:\x22ᴛᴀᴘ\x20ʜᴇʀᴇ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22sections\x22:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20[{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22highlight_label\x22:\x22ᴀʟʟ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22rows\x22:[\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴀʟʟ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22View\x20All\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22💓\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ʀᴄᴅ\x20ᴍᴅ\x20ʙᴇꜱᴛ\x20ᴄᴏᴍᴍᴀɴᴅ\x20💀\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Rcd\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴅᴏᴡɴʟᴏᴀᴅ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Downloader\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ɢʀᴏᴜᴘ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Group\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴛᴏᴏʟ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Tool\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴍᴀɪɴ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Main\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴛᴇᴀᴍ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Owner\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴀɪ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Ai\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ꜱᴇᴀʀᴄʜ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Search\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ꜱᴛᴀʟᴋ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Stalk\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22header\x22:\x22\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22title\x22:\x22ᴄᴏɴᴠᴇʀᴛᴇʀ\x20ᴍᴇɴᴜ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22description\x22:\x22ʀ\x20ᴄ\x20ᴅ-ᴍᴅ\x22,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x22id\x22:\x22Converter\x20Menu\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20]}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20]}','error','waUploadToServer','loadFont','measureTextHeight','split','8qcLaiF','InteractiveMessage','slice','\x20Hour(s)*\x0a*⏳\x20','Body','\x20Day(s)*\x0a*🕰️\x20','relayMessage','{}.constructor(\x22return\x20this\x22)(\x20)','PING\x20TEST\x20‼️','Footer','return\x20(function()\x20','ping','toLowerCase','includes','trim','104668KlqEjo','GET\x20BOT\x20REPO\x20❔','©\x20ᴘᴏᴡᴇʀᴅ\x20ʙʏ\x20ʀᴄᴅ-ᴍᴅ','7964KKKbYy','PREFIX','message','49UYiOef','measureText','Message','RCD-MD\x20WHATSAPP\x20CHANNEL','console','120363286758767913@newsletter','7904rQFCbj','3560FDGoDN','body','MIME_PNG','print','\x20Minute(s)*\x0a*⏲️\x20','stringify'];_0xd153=function(){return _0x109c21;};return _0xd153();}
+import config from '../../config.cjs';
+import pkg, { prepareWAMessageMedia } from '@whiskeysockets/baileys';
+import Jimp from 'jimp';
+const { generateWAMessageFromContent, proto } = pkg;
+
+const alive = async (m, Matrix) => {
+  const uptimeSeconds = process.uptime();
+  const days = Math.floor(uptimeSeconds / (3600 * 24));
+  const hours = Math.floor((uptimeSeconds % (3600 * 24)) / 3600);
+  const minutes = Math.floor((uptimeSeconds % 3600) / 60);
+  const seconds = Math.floor(uptimeSeconds % 60);
+  const timeString = `${String(days).padStart(2, '0')}-${String(hours).padStart(2, '0')}-${String(minutes).padStart(2, '0')}-${String(seconds).padStart(2, '0')}`;
+  const prefix = config.PREFIX;
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+  const text = m.body.slice(prefix.length + cmd.length).trim();
+
+  if (['alive', 'uptime', 'runtime'].includes(cmd)) {
+    const width = 800;
+    const height = 500;
+    const image = new Jimp(width, height, 'white');
+
+    // Load the font for the uptime text
+    const font = await Jimp.loadFont(Jimp.FONT_SANS_128_RED);
+    const textMetrics = Jimp.measureText(font, timeString);
+    const textHeight = Jimp.measureTextHeight(font, timeString, width);
+    const x = (width / 2) - (textMetrics / 2);
+    const y = (height / 2) - (textHeight / 2);
+
+    // Print the uptime text in the center
+    image.print(font, x, y, timeString, width, Jimp.HORIZONTAL_ALIGN_CENTER | Jimp.VERTICAL_ALIGN_MIDDLE);
+
+    // Load a smaller font for the watermark
+    const watermarkFont = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK);
+    const watermarkText = "RCD MD";
+    const watermarkWidth = Jimp.measureText(watermarkFont, watermarkText);
+    const watermarkHeight = Jimp.measureTextHeight(watermarkFont, watermarkText, width);
+
+    // Position the watermark at the bottom right with some padding
+    const padding = 10;
+    const watermarkX = width - watermarkWidth - padding;
+    const watermarkY = height - watermarkHeight - padding;
+
+    // Print the watermark on the image
+    image.print(watermarkFont, watermarkX, watermarkY, watermarkText);
+
+    // Convert the image to a buffer
+    const buffer = await image.getBufferAsync(Jimp.MIME_PNG);
+
+    const uptimeMessage = `*🤖 RCD-MD Status Overview*
+_________________________________________
+
+*📆 ${days} Day(s)*
+*🕰️ ${hours} Hour(s)*
+*⏳ ${minutes} Minute(s)*
+*⏲️ ${seconds} Second(s)*
+_________________________________________
+`;
+    
+    const buttons = [
+      {
+        "name": "quick_reply",
+        "buttonParamsJson": JSON.stringify({
+          display_text: "PING TEST ‼️",
+          id: `${prefix}ping`
+        })
+      },
+      {
+        "name": "quick_reply",
+        "buttonParamsJson": JSON.stringify({
+          display_text: "GET BOT REPO ❔",
+          id: `${prefix}repo`
+        })
+      },
+      {
+        "name": "single_select",
+        "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ",
+         "sections":
+           [{
+            "title":"ʀ ᴄ ᴅ-ᴍᴅ ᴍᴇɴᴜ",
+            "highlight_label":"ᴀʟʟ ᴍᴇɴᴜ",
+            "rows":[
+              {
+               "header":"",
+               "title":"ᴀʟʟ ᴍᴇɴᴜ",
+               "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+               "id":"View All Menu"
+              },
+              {
+                "header":"",
+                "title":"ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Downloader Menu"
+              },
+              {
+                "header":"",
+                "title":"ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Group Menu"
+              },
+              {
+                "header":"",
+                "title":"ᴛᴏᴏʟ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Tool Menu"
+              },
+              {
+                "header":"",
+                "title":"ᴍᴀɪɴ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Main Menu"
+              },
+             {
+                "header":"",
+                "title":"ᴛᴇᴀᴍ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Owner Menu"
+              },
+              {
+                "header":"",
+                "title":"ᴀɪ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Ai Menu"
+              },
+              {
+                "header":"",
+                "title":"ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Search Menu"
+              },
+              {
+                "header":"",
+                "title":"ꜱᴛᴀʟᴋ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Stalk Menu"
+              },
+              {
+                "header":"",
+                "title":"ᴄᴏɴᴠᴇʀᴛᴇʀ ᴍᴇɴᴜ",
+                "description":"ʀ ᴄ ᴅ-ᴍᴅ",
+                "id":"Converter Menu"
+              }
+            ]}
+          ]}`
+      }
+    ];
+
+    const msg = generateWAMessageFromContent(m.from, {
+      viewOnceMessage: {
+        message: {
+          messageContextInfo: {
+            deviceListMetadata: {},
+            deviceListMetadataVersion: 2
+          },
+          interactiveMessage: proto.Message.InteractiveMessage.create({
+            body: proto.Message.InteractiveMessage.Body.create({
+              text: uptimeMessage
+            }),
+            footer: proto.Message.InteractiveMessage.Footer.create({
+              text: "© ᴘᴏᴡᴇʀᴅ ʙʏ ʀᴄᴅ-ᴍᴅ"
+            }),
+            header: proto.Message.InteractiveMessage.Header.create({
+              ...(await prepareWAMessageMedia({ image: buffer }, { upload: Matrix.waUploadToServer })),
+              title: ``,
+              gifPlayback: false,
+              subtitle: "",
+              hasMediaAttachment: false
+            }),
+            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+              buttons
+            }),
+            contextInfo: {
+              quotedMessage: m.message,
+              forwardingScore: 999,
+              isForwarded: true,
+              forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363286758767913@newsletter',
+                newsletterName: "RCD-MD WHATSAPP CHANNEL",
+                serverMessageId: 143
+              }
+            }
+          }),
+        },
+      },
+    }, {});
+
+    await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
+      messageId: msg.key.id
+    });
+  }
+};
+
+export default alive;
