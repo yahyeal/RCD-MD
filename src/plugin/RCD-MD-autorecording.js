@@ -1,90 +1,59 @@
-import config from '../../config.cjs';
-import { generateWAMessageFromContent, proto } from '@whiskeysockets/baileys';
+import { create, Client } from '@whiskeysockets/baileys';
+import axios from 'axios';
+import fs from 'fs';
+import path from 'path';
 
-const autorecordingCommand = async (m, Matrix) => {
-  const botNumber = await Matrix.decodeJid(Matrix.user.id);
-  const isCreator = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(m.sender);
-  const prefixMatch = m.body.match(/^[\\/!#.]/);
-  const prefix = prefixMatch ? prefixMatch[0] : '/';
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+const startBot = async () => {
+    const client = create();
 
-  if (cmd === 'autorecording') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
-
-    // Create interactive message with single-select buttons
-    const msg = generateWAMessageFromContent(m.from, {
-      viewOnceMessage: {
-        message: {
-          interactiveMessage: proto.Message.InteractiveMessage.create({
-            body: proto.Message.InteractiveMessage.Body.create({
-              text: "*Auto-Recording Options*\nChoose an option to enable or disable Auto-Recording."
-            }),
-            footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© RCD-MD Bot"
-            }),
-            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-              buttons: [
-                {
-                  name: "single_select",
-                  buttonParamsJson: JSON.stringify({
-                    title: "Auto-Recording Options",
-                    sections: [
-                      {
-                        title: "Select an option",
-                        rows: [
-                          {
-                            title: "Enable Auto-Recording",
-                            description: "Turn on auto-recording",
-                            id: "autorecording_on"
-                          },
-                          {
-                            title: "Disable Auto-Recording",
-                            description: "Turn off auto-recording",
-                            id: "autorecording_off"
-                          }
-                        ]
-                      }
-                    ]
-                  })
-                }
-              ]
-            }),
-          })
-        }
-      }
-    }, {});
-
-    await Matrix.relayMessage(m.from, msg.message, {
-      messageId: msg.key.id
+    client.on('ready', () => {
+        console.log('Bot is ready!');
     });
-  }
 
-  // Handling button responses
-  const interactiveResponseMessage = m?.message?.interactiveResponseMessage;
-  if (interactiveResponseMessage) {
-    const paramsJson = interactiveResponseMessage.nativeFlowResponseMessage?.paramsJson;
+    client.on('message-new', async (msg) => {
+        const from = msg.key.remoteJid;
+        const text = msg.message?.conversation;
 
-    if (paramsJson) {
-      const params = JSON.parse(paramsJson);
-      const selectedId = params.id; // Get the selected button ID
-      let responseMessage;
+        // Command to upload an image from a URL as a status
+        if (text && text.startsWith('statusid')) {
+            const args = text.split(' ').slice(1);
+            const imageUrl = args[0]; // First argument should be the image URL
 
-      if (selectedId === "autorecording_on") {
-        config.AUTO_RECORDING = true;
-        responseMessage = "Auto-Recording has been enabled.";
-      } else if (selectedId === "autorecording_off") {
-        config.AUTO_RECORDING = false;
-        responseMessage = "Auto-Recording has been disabled.";
-      }
+            if (!imageUrl) {
+                return client.sendMessage(from, { text: 'Please provide an image URL.' });
+            }
 
-      try {
-        await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
-      } catch (error) {
-        console.error("Error processing your request:", error);
-        await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
-      }
-    }
-  }
+            try {
+                // Fetch the image from the URL
+                const response = await axios({
+                    method: 'get',
+                    url: imageUrl,
+                    responseType: 'arraybuffer', // Ensure the response is treated as a buffer
+                });
+
+                // Create a temporary file to hold the image
+                const imageBuffer = Buffer.from(response.data);
+                const tempFilePath = path.join(__dirname, 'temp_image.jpg');
+                fs.writeFileSync(tempFilePath, imageBuffer); // Write the image buffer to a file
+
+                // Upload the image as status
+                await client.sendMessage('status@broadcast', {
+                    image: { url: tempFilePath }, // Use the temporary file for sending
+                    caption: 'New Status Update!', // Optional caption
+                });
+
+                // Cleanup: Delete the temporary file
+                fs.unlinkSync(tempFilePath);
+
+                return client.sendMessage(from, { text: 'Status updated with the image!' });
+            } catch (error) {
+                console.error('Error uploading status:', error);
+                return client.sendMessage(from, { text: 'Failed to update status. Please ensure the URL is valid.' });
+            }
+        }
+    });
+
+    await client.connect();
 };
 
-export default autorecordingCommand;
+startBot();
