@@ -34,13 +34,17 @@ const videoCommand = async (m, Matrix) => {
     const videoDetails = await fetchVideoDetails(videoUrl);
     if (!videoDetails) return m.reply("Failed to retrieve video details.");
 
-    // Display video options with title and thumbnail
+    // Display video options with title, thumbnail, and quality selection
     const msg = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
         message: {
+          imageMessage: {
+            url: videoDetails.thumbnail,  // Include thumbnail image
+            caption: `*${videoDetails.title}*\nChoose a quality to download.\n\n© RCD-MD Bot`
+          },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `*${videoDetails.title}*\nChoose a quality to download.`
+              text: `Choose a quality to download.`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: "© RCD-MD Bot"
@@ -89,21 +93,23 @@ const videoCommand = async (m, Matrix) => {
 
   // Handle quality selection for download
   const selectedButtonId = m?.message?.templateButtonReplyMessage?.selectedId;
-  if (selectedButtonId === "download_720") {
-    const video720 = await fetchVideoDetails(videoUrl, '720');
-    await Matrix.sendMessage(m.from, {
-      text: `Here's your download link for *${video720.title}* (720p): ${video720.download_url}`
-    });
-  } else if (selectedButtonId === "download_480") {
-    const video480 = await fetchVideoDetails(videoUrl, '480');
-    await Matrix.sendMessage(m.from, {
-      text: `Here's your download link for *${video480.title}* (480p): ${video480.download_url}`
-    });
-  } else if (selectedButtonId === "download_320") {
-    const video320 = await fetchVideoDetails(videoUrl, '320');
-    await Matrix.sendMessage(m.from, {
-      text: `Here's your download link for *${video320.title}* (320p): ${video320.download_url}`
-    });
+  if (selectedButtonId) {
+    let quality;
+    if (selectedButtonId === "download_720") quality = '720';
+    else if (selectedButtonId === "download_480") quality = '480';
+    else if (selectedButtonId === "download_320") quality = '320';
+
+    if (quality) {
+      const videoDetails = await fetchVideoDetails(videoUrl, quality);
+      if (videoDetails && videoDetails.download_url) {
+        await Matrix.sendMessage(m.from, {
+          text: `*Title:* ${videoDetails.title}\n*Quality:* ${videoDetails.quality}\n\n[Download Video](${videoDetails.download_url})`,
+          image: { url: videoDetails.thumbnail }
+        });
+      } else {
+        await m.reply("Failed to retrieve the download link. Please try again.");
+      }
+    }
   }
 };
 
