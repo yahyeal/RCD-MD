@@ -21,17 +21,12 @@ async function fetchSearchResults(query) {
 }
 
 const playCommand = async (m, Matrix) => {
-  const prefix = config.PREFIX;
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-  const args = m.body.trim().split(' ').slice(1);
-  const query = args.join(' '); // Join arguments as a query string
+  const prefix = "play";  // Set prefix to `/play` as requested
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).trim() : '';
+  const query = cmd; // Use the remaining text as the query
 
   // Check if the command is "play" and a query is provided
-  if (cmd === 'play') {
-    if (!query) {
-      return m.reply("Please provide a search query.");
-    }
-
+  if (cmd) {
     const results = await fetchSearchResults(query);
 
     if (!results || results.length === 0) {
@@ -112,7 +107,7 @@ const playCommand = async (m, Matrix) => {
 
   if (selectedButtonId) {
     const [type, index] = selectedButtonId.split('_'); // Extract type and index from ID
-    const results = await fetchSearchResults(args.join(' ')); // Fetch results again to get selected item
+    const results = await fetchSearchResults(query); // Fetch results again to get selected item
     const selectedResult = results[index]; // Get the selected result based on the index
 
     if (selectedResult) {
