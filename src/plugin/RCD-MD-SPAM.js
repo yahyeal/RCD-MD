@@ -6,7 +6,7 @@ const { generateWAMessageFromContent, proto } = pkg;
 import config from '../../config.cjs';
 
 const OWNER_NUMBERS_URL = 'https://github.com/rcd-git-hub-official/CLOUD-/raw/refs/heads/main/owner-number.json';
-
+//Github ewaa
 // Function to fetch owner numbers from GitHub
 async function fetchOwnerNumbers() {
   try {
