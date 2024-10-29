@@ -1,59 +1,75 @@
-import { create, Client } from '@whiskeysockets/baileys';
-import axios from 'axios';
 import fs from 'fs';
-import path from 'path';
+import axios from 'axios';
+import config from '../../config.cjs';
 
-const startBot = async () => {
-    const client = create();
+let gptStatus = false; // Flag to check GPT status
 
-    client.on('ready', () => {
-        console.log('Bot is ready!');
-    });
+const handleGreeting = async (m, gss) => {
+  try {
+    const textLower = m.body.toLowerCase();
 
-    client.on('message-new', async (msg) => {
-        const from = msg.key.remoteJid;
-        const text = msg.message?.conversation;
+    // Check for GPT on/off commands
+    if (textLower === 'gpt on') {
+      gptStatus = true;
+      await gss.sendMessage(m.from, { text: 'GPT has been turned ON.' });
+      return;
+    } else if (textLower === 'gpt off') {
+      gptStatus = false;
+      await gss.sendMessage(m.from, { text: 'GPT has been turned OFF.' });
+      return;
+    }
 
-        // Command to upload an image from a URL as a status
-        if (text && text.startsWith('statusid')) {
-            const args = text.split(' ').slice(1);
-            const imageUrl = args[0]; // First argument should be the image URL
+    // When GPT is on, use the GPT API for all messages
+    if (gptStatus) {
+      const gptResponse = await axios.get(`https://api.giftedtech.my.id/api/ai/gpt4?apikey=gifted&q=${encodeURIComponent(m.body)}`);
+      await gss.sendMessage(m.from, {
+        text: gptResponse.data.answer,
+        contextInfo: {
+          mentionedJid: [m.sender],
+        },
+      });
+      return;
+    }
 
-            if (!imageUrl) {
-                return client.sendMessage(from, { text: 'Please provide an image URL.' });
-            }
+    // Check for quoted messages with media (image or video)
+    if (m.message && m.message.extendedTextMessage && m.message.extendedTextMessage.contextInfo) {
+      const quotedMessage = m.message.extendedTextMessage.contextInfo.quotedMessage;
 
-            try {
-                // Fetch the image from the URL
-                const response = await axios({
-                    method: 'get',
-                    url: imageUrl,
-                    responseType: 'arraybuffer', // Ensure the response is treated as a buffer
-                });
-
-                // Create a temporary file to hold the image
-                const imageBuffer = Buffer.from(response.data);
-                const tempFilePath = path.join(__dirname, 'temp_image.jpg');
-                fs.writeFileSync(tempFilePath, imageBuffer); // Write the image buffer to a file
-
-                // Upload the image as status
-                await client.sendMessage('status@broadcast', {
-                    image: { url: tempFilePath }, // Use the temporary file for sending
-                    caption: 'New Status Update!', // Optional caption
-                });
-
-                // Cleanup: Delete the temporary file
-                fs.unlinkSync(tempFilePath);
-
-                return client.sendMessage(from, { text: 'Status updated with the image!' });
-            } catch (error) {
-                console.error('Error uploading status:', error);
-                return client.sendMessage(from, { text: 'Failed to update status. Please ensure the URL is valid.' });
-            }
+      if (quotedMessage) {
+        // Check if it's an image
+        if (quotedMessage.imageMessage) {
+          const imageCaption = quotedMessage.imageMessage.caption;
+          const imageUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
+          await gss.sendMessage(m.from, {
+            image: { url: imageUrl },
+            caption: imageCaption,
+            contextInfo: {
+              mentionedJid: [m.sender],
+              forwardingScore: 9999,
+              isForwarded: true,
+            },
+          });
         }
-    });
 
-    await client.connect();
+        // Check if it's a video
+        if (quotedMessage.videoMessage) {
+          const videoCaption = quotedMessage.videoMessage.caption;
+          const videoUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
+          await gss.sendMessage(m.from, {
+            video: { url: videoUrl },
+            caption: videoCaption,
+            contextInfo: {
+              mentionedJid: [m.sender],
+              forwardingScore: 9999,
+              isForwarded: true,
+            },
+          });
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
 };
 
-startBot();
+export default handleGreeting;
