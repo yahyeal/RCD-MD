@@ -1,1 +1,90 @@
-(function(_0x304986,_0x2fb214){const _0x5f50aa=_0x304986();function _0x5c50c9(_0x464999,_0x14b34c){return _0x359f(_0x464999-0x6d,_0x14b34c);}while(!![]){try{const _0x3dcc9d=-parseInt(_0x5c50c9(0x18d,0x190))/0x1*(parseInt(_0x5c50c9(0x1b2,0x1b1))/0x2)+-parseInt(_0x5c50c9(0x1c1,0x1d6))/0x3*(parseInt(_0x5c50c9(0x191,0x1ab))/0x4)+parseInt(_0x5c50c9(0x1b5,0x1a3))/0x5*(-parseInt(_0x5c50c9(0x1b9,0x1c2))/0x6)+parseInt(_0x5c50c9(0x18c,0x1ae))/0x7+parseInt(_0x5c50c9(0x19b,0x196))/0x8*(parseInt(_0x5c50c9(0x1aa,0x18b))/0x9)+parseInt(_0x5c50c9(0x198,0x17b))/0xa+parseInt(_0x5c50c9(0x19c,0x1a4))/0xb*(parseInt(_0x5c50c9(0x1ab,0x1b8))/0xc);if(_0x3dcc9d===_0x2fb214)break;else _0x5f50aa['push'](_0x5f50aa['shift']());}catch(_0x74ac4f){_0x5f50aa['push'](_0x5f50aa['shift']());}}}(_0x3654,0x75270));const _0x11e02e=(function(){let _0x30cdcf=!![];return function(_0x24aa06,_0x1fc23f){const _0x5d0f1a=_0x30cdcf?function(){function _0x23cfcb(_0x1cf9ac,_0x438910){return _0x359f(_0x1cf9ac- -0x7e,_0x438910);}if(_0x1fc23f){const _0x519388=_0x1fc23f[_0x23cfcb(0xcc,0xb9)](_0x24aa06,arguments);return _0x1fc23f=null,_0x519388;}}:function(){};return _0x30cdcf=![],_0x5d0f1a;};}()),_0x5edc4d=_0x11e02e(this,function(){const _0x568c0f=function(){function _0x4a67de(_0x4f8905,_0x42058e){return _0x359f(_0x4f8905-0x3bd,_0x42058e);}let _0x4e9172;try{_0x4e9172=Function(_0x4a67de(0x4d9,0x4df)+_0x4a67de(0x4d8,0x4cf)+');')();}catch(_0x34e33c){_0x4e9172=window;}return _0x4e9172;},_0x4f4466=_0x568c0f();function _0x4c2a2f(_0x2dfe22,_0x3628e5){return _0x359f(_0x3628e5- -0x1d0,_0x2dfe22);}const _0x3761d2=_0x4f4466[_0x4c2a2f(-0x88,-0x99)]=_0x4f4466[_0x4c2a2f(-0xa0,-0x99)]||{},_0x499121=[_0x4c2a2f(-0xc4,-0xa4),_0x4c2a2f(-0xb6,-0xab),_0x4c2a2f(-0x8c,-0x97),'error',_0x4c2a2f(-0x85,-0xa0),_0x4c2a2f(-0x67,-0x7a),_0x4c2a2f(-0xbd,-0xa6)];for(let _0x97eb60=0x0;_0x97eb60<_0x499121[_0x4c2a2f(-0x9e,-0xb2)];_0x97eb60++){const _0x2f500d=_0x11e02e['constructor']['prototype'][_0x4c2a2f(-0xa5,-0x9e)](_0x11e02e),_0x1d3659=_0x499121[_0x97eb60],_0x1e7164=_0x3761d2[_0x1d3659]||_0x2f500d;_0x2f500d['__proto__']=_0x11e02e[_0x4c2a2f(-0xbd,-0x9e)](_0x11e02e),_0x2f500d[_0x4c2a2f(-0xb7,-0x9c)]=_0x1e7164['toString'][_0x4c2a2f(-0x96,-0x9e)](_0x1e7164),_0x3761d2[_0x1d3659]=_0x2f500d;}});_0x5edc4d();import _0x23194d from'../../config.cjs';import{generateWAMessageFromContent,proto}from'@whiskeysockets/baileys';const autorecordingCommand=async(_0x5268c2,_0x266c41)=>{function _0x8c60c2(_0x29fc13,_0x3c3da0){return _0x359f(_0x3c3da0-0x172,_0x29fc13);}const _0x9d84da=await _0x266c41['decodeJid'](_0x266c41[_0x8c60c2(0x29c,0x295)]['id']),_0x5d2de6=[_0x9d84da,_0x23194d['OWNER_NUMBER']+_0x8c60c2(0x281,0x293)][_0x8c60c2(0x29f,0x2c1)](_0x5268c2[_0x8c60c2(0x2b3,0x2a3)]),_0x40f03c=_0x5268c2[_0x8c60c2(0x2a9,0x2ac)][_0x8c60c2(0x2cb,0x2c0)](/^[\\/!#.]/),_0x5c9687=_0x40f03c?_0x40f03c[0x0]:'/',_0x937220=_0x5268c2['body'][_0x8c60c2(0x295,0x2a7)](_0x5c9687)?_0x5268c2[_0x8c60c2(0x2a7,0x2ac)][_0x8c60c2(0x29f,0x2bd)](_0x5c9687[_0x8c60c2(0x28e,0x290)])[_0x8c60c2(0x2b6,0x29b)]('\x20')[0x0][_0x8c60c2(0x292,0x28c)]():'';if(_0x937220===_0x8c60c2(0x283,0x298)){if(!_0x5d2de6)return _0x5268c2[_0x8c60c2(0x2a2,0x2bb)](_0x8c60c2(0x2c6,0x2c5));const _0x157fa1=generateWAMessageFromContent(_0x5268c2[_0x8c60c2(0x299,0x2b4)],{'viewOnceMessage':{'message':{'interactiveMessage':proto[_0x8c60c2(0x2a6,0x2ae)][_0x8c60c2(0x27f,0x288)][_0x8c60c2(0x2ba,0x2b9)]({'body':proto[_0x8c60c2(0x291,0x2ae)]['InteractiveMessage'][_0x8c60c2(0x2aa,0x299)][_0x8c60c2(0x2aa,0x2b9)]({'text':_0x8c60c2(0x269,0x28b)}),'footer':proto[_0x8c60c2(0x2c1,0x2ae)][_0x8c60c2(0x271,0x288)][_0x8c60c2(0x276,0x28f)][_0x8c60c2(0x29d,0x2b9)]({'text':_0x8c60c2(0x2b7,0x2c7)}),'nativeFlowMessage':proto[_0x8c60c2(0x295,0x2ae)][_0x8c60c2(0x27b,0x288)]['NativeFlowMessage'][_0x8c60c2(0x2bd,0x2b9)]({'buttons':[{'name':_0x8c60c2(0x29e,0x2a8),'buttonParamsJson':JSON[_0x8c60c2(0x2ac,0x29a)]({'title':_0x8c60c2(0x2b8,0x2b6),'sections':[{'title':_0x8c60c2(0x2c3,0x2c9),'rows':[{'title':_0x8c60c2(0x2ce,0x2b1),'description':_0x8c60c2(0x2a2,0x2a5),'id':_0x8c60c2(0x2b9,0x2aa)},{'title':_0x8c60c2(0x274,0x287),'description':_0x8c60c2(0x2bd,0x29f),'id':_0x8c60c2(0x293,0x2ad)}]}]})}]})})}}},{});await _0x266c41[_0x8c60c2(0x29b,0x289)](_0x5268c2['from'],_0x157fa1[_0x8c60c2(0x2a4,0x2bf)],{'messageId':_0x157fa1[_0x8c60c2(0x2c9,0x2c3)]['id']});}if(_0x5268c2?.['message']?.[_0x8c60c2(0x29a,0x294)]){const _0x4b3457=_0x5268c2['message'][_0x8c60c2(0x28a,0x294)]['nativeFlowResponseMessage']?.['paramsJson'];let _0x4faad4;if(_0x4b3457===_0x8c60c2(0x2bb,0x2b3))_0x23194d['AUTO_RECORDING']=!![],_0x4faad4=_0x8c60c2(0x28c,0x28a);else _0x4b3457==='recording_off'&&(_0x23194d['AUTO_RECORDING']=![],_0x4faad4=_0x8c60c2(0x29f,0x2b2));try{await _0x266c41[_0x8c60c2(0x2e3,0x2c4)](_0x5268c2[_0x8c60c2(0x2a6,0x2b4)],{'text':_0x4faad4},{'quoted':_0x5268c2});}catch(_0x3e9ac4){console[_0x8c60c2(0x2b0,0x2b8)](_0x8c60c2(0x2ce,0x2b5),_0x3e9ac4),await _0x266c41['sendMessage'](_0x5268c2[_0x8c60c2(0x2cb,0x2b4)],{'text':_0x8c60c2(0x2a2,0x2c2)},{'quoted':_0x5268c2});}}};export default autorecordingCommand;function _0x359f(_0x2b1191,_0x57f79c){const _0x4d1b2e=_0x3654();return _0x359f=function(_0x5edc4d,_0x11e02e){_0x5edc4d=_0x5edc4d-0x115;let _0x393184=_0x4d1b2e[_0x5edc4d];return _0x393184;},_0x359f(_0x2b1191,_0x57f79c);}function _0x3654(){const _0xc651b8=['user','36rrnaCB','warn','recording','Body','stringify','split','trace','3648810PfOwGQ','log','Turn\x20off\x20auto-recording','2244728AxPhDl','40645YdTnii','exception','sender','bind','Turn\x20on\x20auto-recording','toString','startsWith','single_select','console','recording_on','info','body','recording_off','Message','9qOjCWp','408LoRnjN','Enable\x20Auto-Recording','Auto-Recording\x20has\x20been\x20disabled.','arecording_on','from','Error\x20processing\x20your\x20request:','Auto-Recording\x20Options','2ptqBtN','error','create','68345hkVqdh','reply','apply','slice','30ceuZyJ','message','match','includes','Error\x20processing\x20your\x20request.','key','sendMessage','*📛\x20THIS\x20IS\x20AN\x20OWNER\x20COMMAND*','67191GMGgGR','©\x20RCD-MD\x20','table','Select\x20an\x20option','Disable\x20Auto-Recording','InteractiveMessage','relayMessage','Auto-Recording\x20has\x20been\x20enabled.','*Auto-Recording\x20Options*\x0aChoose\x20an\x20option\x20to\x20enable\x20or\x20disable\x20Auto-Recording.','toLowerCase','{}.constructor(\x22return\x20this\x22)(\x20)','return\x20(function()\x20','Footer','length','462385zSAKdi','87383iyYouz','@s.whatsapp.net','interactiveResponseMessage'];_0x3654=function(){return _0xc651b8;};return _0x3654();}
+import config from '../../config.cjs';
+import { generateWAMessageFromContent, proto } from '@whiskeysockets/baileys';
+
+const autorecordingCommand = async (m, Matrix) => {
+  const botNumber = await Matrix.decodeJid(Matrix.user.id);
+  const isCreator = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(m.sender);
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+
+  if (cmd === 'autorecording') {
+    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+
+    // Create interactive message with single-select buttons
+    const msg = generateWAMessageFromContent(m.from, {
+      viewOnceMessage: {
+        message: {
+          interactiveMessage: proto.Message.InteractiveMessage.create({
+            body: proto.Message.InteractiveMessage.Body.create({
+              text: "*Auto-Recording Options*\nChoose an option to enable or disable Auto-Recording."
+            }),
+            footer: proto.Message.InteractiveMessage.Footer.create({
+              text: "© RCD-MD Bot"
+            }),
+            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+              buttons: [
+                {
+                  name: "single_select",
+                  buttonParamsJson: JSON.stringify({
+                    title: "Auto-Recording Options",
+                    sections: [
+                      {
+                        title: "Select an option",
+                        rows: [
+                          {
+                            title: "Enable Auto-Recording",
+                            description: "Turn on auto-recording",
+                            id: "autorecording_on"
+                          },
+                          {
+                            title: "Disable Auto-Recording",
+                            description: "Turn off auto-recording",
+                            id: "autorecording_off"
+                          }
+                        ]
+                      }
+                    ]
+                  })
+                }
+              ]
+            }),
+          })
+        }
+      }
+    }, {});
+
+    await Matrix.relayMessage(m.from, msg.message, {
+      messageId: msg.key.id
+    });
+  }
+
+  // Handling button responses
+  const interactiveResponseMessage = m?.message?.interactiveResponseMessage;
+  if (interactiveResponseMessage) {
+    const paramsJson = interactiveResponseMessage.nativeFlowResponseMessage?.paramsJson;
+
+    if (paramsJson) {
+      const params = JSON.parse(paramsJson);
+      const selectedId = params.id; // Get the selected button ID
+      let responseMessage;
+
+      if (selectedId === "autorecording_on") {
+        config.AUTO_RECORDING = true;
+        responseMessage = "Auto-Recording has been enabled.";
+      } else if (selectedId === "autorecording_off") {
+        config.AUTO_RECORDING = false;
+        responseMessage = "Auto-Recording has been disabled.";
+      }
+
+      try {
+        await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
+      } catch (error) {
+        console.error("Error processing your request:", error);
+        await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+      }
+    }
+  }
+};
+
+export default autorecordingCommand;
