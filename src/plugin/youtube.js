@@ -1,1 +1,84 @@
-(function(_0x5ab167,_0x54f78b){function _0x51859d(_0xb6a594,_0x50d5ee){return _0x4786(_0x50d5ee-0x324,_0xb6a594);}const _0xb457e1=_0x5ab167();while(!![]){try{const _0x4ad1da=-parseInt(_0x51859d(0x434,0x434))/0x1*(parseInt(_0x51859d(0x44c,0x43a))/0x2)+-parseInt(_0x51859d(0x45e,0x439))/0x3*(parseInt(_0x51859d(0x444,0x41a))/0x4)+-parseInt(_0x51859d(0x44f,0x43e))/0x5*(parseInt(_0x51859d(0x415,0x41e))/0x6)+parseInt(_0x51859d(0x460,0x453))/0x7*(parseInt(_0x51859d(0x41e,0x41c))/0x8)+parseInt(_0x51859d(0x425,0x413))/0x9+-parseInt(_0x51859d(0x42c,0x448))/0xa*(parseInt(_0x51859d(0x42a,0x433))/0xb)+-parseInt(_0x51859d(0x465,0x44b))/0xc*(-parseInt(_0x51859d(0x462,0x44d))/0xd);if(_0x4ad1da===_0x54f78b)break;else _0xb457e1['push'](_0xb457e1['shift']());}catch(_0x18746f){_0xb457e1['push'](_0xb457e1['shift']());}}}(_0x2f00,0x5f53c));const _0x3615a4=(function(){let _0x53cdec=!![];return function(_0x41fc5e,_0x58a2c1){const _0x10cd87=_0x53cdec?function(){if(_0x58a2c1){const _0x45e3f6=_0x58a2c1['apply'](_0x41fc5e,arguments);return _0x58a2c1=null,_0x45e3f6;}}:function(){};return _0x53cdec=![],_0x10cd87;};}()),_0x4c9723=_0x3615a4(this,function(){let _0x5a3182;try{const _0x932a97=Function(_0xfe992b(-0x1d2,-0x1b7)+_0xfe992b(-0x1a5,-0x1bc)+');');_0x5a3182=_0x932a97();}catch(_0x34aab7){_0x5a3182=window;}function _0xfe992b(_0x273515,_0x1bf2e1){return _0x4786(_0x1bf2e1- -0x2c8,_0x273515);}const _0x2a1398=_0x5a3182[_0xfe992b(-0x1e0,-0x1ba)]=_0x5a3182[_0xfe992b(-0x1d0,-0x1ba)]||{},_0x3cf217=[_0xfe992b(-0x1c7,-0x1b4),_0xfe992b(-0x1a3,-0x1bd),_0xfe992b(-0x1c1,-0x1d5),_0xfe992b(-0x1bd,-0x1c7),'exception','table',_0xfe992b(-0x198,-0x19e)];for(let _0x2172c0=0x0;_0x2172c0<_0x3cf217['length'];_0x2172c0++){const _0x387f95=_0x3615a4['constructor'][_0xfe992b(-0x207,-0x1e3)][_0xfe992b(-0x1ad,-0x1ac)](_0x3615a4),_0x3b3cb8=_0x3cf217[_0x2172c0],_0x5419b6=_0x2a1398[_0x3b3cb8]||_0x387f95;_0x387f95['__proto__']=_0x3615a4[_0xfe992b(-0x1b6,-0x1ac)](_0x3615a4),_0x387f95[_0xfe992b(-0x17c,-0x195)]=_0x5419b6[_0xfe992b(-0x1a9,-0x195)][_0xfe992b(-0x1d5,-0x1ac)](_0x5419b6),_0x2a1398[_0x3b3cb8]=_0x387f95;}});_0x4c9723();function _0x4786(_0x54c98f,_0x3e5702){const _0x13d7c3=_0x2f00();return _0x4786=function(_0x4c9723,_0x3615a4){_0x4c9723=_0x4c9723-0xe0;let _0x2a1290=_0x13d7c3[_0x4c9723];return _0x2a1290;},_0x4786(_0x54c98f,_0x3e5702);}import _0x17e835 from'moment-timezone';import _0x1d14cf from'fs';import _0x9afe17 from'os';import _0x48ea4f,{prepareWAMessageMedia}from'@whiskeysockets/baileys';function _0x2c21c1(_0x40e266,_0xad3084){return _0x4786(_0xad3084- -0x226,_0x40e266);}const {generateWAMessageFromContent,proto}=_0x48ea4f,ownerNumber=_0x2c21c1(-0x12b,-0x13c);import _0x2aa6e6 from'../../config.cjs';const test=async(_0x597a9a,_0x55d60a)=>{let _0x1b8e10;const _0x27b5cb=_0x597a9a?.[_0x4028c8(-0x195,-0x190)]?.[_0x4028c8(-0x185,-0x15a)]?.[_0x4028c8(-0x156,-0x143)],_0x3b6ef2=_0x597a9a?.[_0x4028c8(-0x195,-0x18e)]?.[_0x4028c8(-0x18f,-0x1b7)];if(_0x3b6ef2){const _0x139dc3=_0x3b6ef2[_0x4028c8(-0x16d,-0x184)]?.[_0x4028c8(-0x164,-0x152)];if(_0x139dc3){const _0x11aa9c=JSON[_0x4028c8(-0x158,-0x140)](_0x139dc3);_0x1b8e10=_0x11aa9c['id'];}}const _0x5cece3=_0x1b8e10||_0x27b5cb,_0x31860f=_0x2aa6e6[_0x4028c8(-0x15c,-0x151)];function _0x4028c8(_0x4b041a,_0x58ab33){return _0x2c21c1(_0x58ab33,_0x4b041a- -0x64);}const _0x1ede58=_0x597a9a[_0x4028c8(-0x15a,-0x16f)][_0x4028c8(-0x16f,-0x158)](_0x31860f)?_0x597a9a['body'][_0x4028c8(-0x171,-0x175)](_0x31860f[_0x4028c8(-0x18b,-0x178)])[_0x4028c8(-0x183,-0x174)]('\x20')[0x0][_0x4028c8(-0x16c,-0x172)]():'',_0xf55d76=_0x2aa6e6['MODE']===_0x4028c8(-0x1a4,-0x179)?_0x4028c8(-0x1a4,-0x195):_0x4028c8(-0x191,-0x182),_0x13f778=_0x2aa6e6[_0x4028c8(-0x15c,-0x184)],_0x1903da=['setting','Id'];if(_0x1903da['includes'](_0x1ede58)){const _0xccc0f2=generateWAMessageFromContent(_0x597a9a[_0x4028c8(-0x172,-0x17b)],{'viewOnceMessage':{'message':{'interactiveMessage':proto['Message'][_0x4028c8(-0x182,-0x185)]['create']({'body':proto[_0x4028c8(-0x19e,-0x17f)][_0x4028c8(-0x182,-0x194)][_0x4028c8(-0x18c,-0x18b)][_0x4028c8(-0x15d,-0x177)]({'text':_0x4028c8(-0x16b,-0x14b)+ownerNumber+'\x0a│📡\x20ᴘʟᴀᴛғᴏʀᴍ:\x20*'+_0x9afe17['platform']()+_0x4028c8(-0x1a1,-0x1b0)+_0xf55d76+_0x4028c8(-0x16a,-0x188)+_0x13f778+_0x4028c8(-0x162,-0x16f)}),'footer':proto[_0x4028c8(-0x19e,-0x19d)]['InteractiveMessage'][_0x4028c8(-0x193,-0x19c)][_0x4028c8(-0x15d,-0x172)]({'text':'©\x20ᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ʀᴄᴅ-ᴍᴅ'}),'header':proto[_0x4028c8(-0x19e,-0x1a1)]['InteractiveMessage']['Header']['create']({...await prepareWAMessageMedia({'video':_0x1d14cf['readFileSync'](_0x4028c8(-0x177,-0x19b))},{'upload':_0x55d60a['waUploadToServer']}),'title':'','gifPlayback':!![],'subtitle':_0x4028c8(-0x165,-0x15b),'hasMediaAttachment':![]}),'nativeFlowMessage':proto[_0x4028c8(-0x19e,-0x1a2)][_0x4028c8(-0x182,-0x15f)][_0x4028c8(-0x17d,-0x188)][_0x4028c8(-0x15d,-0x174)]({'buttons':[{'name':'quick_reply','buttonParamsJson':JSON[_0x4028c8(-0x159,-0x17a)]({'display_text':_0x4028c8(-0x169,-0x150),'id':_0x31860f+_0x4028c8(-0x180,-0x182)})},{'name':_0x4028c8(-0x19a,-0x1a3),'buttonParamsJson':JSON['stringify']({'display_text':_0x4028c8(-0x188,-0x1af),'id':'BOT\x20INFO'})},{'name':_0x4028c8(-0x19a,-0x1ab),'buttonParamsJson':JSON[_0x4028c8(-0x159,-0x145)]({'display_text':_0x4028c8(-0x186,-0x176),'id':_0x31860f+'menu'})},{'name':_0x4028c8(-0x1a3,-0x1c1),'buttonParamsJson':JSON['stringify']({'title':_0x4028c8(-0x173,-0x15f),'sections':[{'title':_0x4028c8(-0x178,-0x15c),'highlight_label':_0x4028c8(-0x19f,-0x1c3),'rows':[{'header':_0x4028c8(-0x18d,-0x1af),'title':_0x4028c8(-0x1a2,-0x1c7),'description':_0x4028c8(-0x181,-0x181),'id':_0x4028c8(-0x167,-0x13c)},{'header':'ᴠɪᴘ\x20✇','title':_0x4028c8(-0x19d,-0x1ac),'description':_0x4028c8(-0x19c,-0x1a7),'id':'${prefix}autoreact\x20off'}]}]})}]}),'contextInfo':{'mentionedJid':[ownerNumber],'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x4028c8(-0x187,-0x15e),'newsletterName':'RCD-MD\x20WHATSAPP\x20CHANNEL','serverMessageId':0x8f}}})}}},{});await _0x55d60a[_0x4028c8(-0x184,-0x198)](_0x597a9a[_0x4028c8(-0x172,-0x160)],_0xccc0f2[_0x4028c8(-0x195,-0x1b4)],{'messageId':_0xccc0f2[_0x4028c8(-0x15f,-0x140)]['id']});}if(_0x5cece3===_0x4028c8(-0x1a7,-0x1a4)){const _0x2875bf='https://files.catbox.moe/yqn6hf.jpg',_0x114492=_0x1d14cf[_0x4028c8(-0x199,-0x1be)]('./cloud/spam.apk'),_0x321492=(_0x4028c8(-0x18e,-0x188)+_0x597a9a[_0x4028c8(-0x1a9,-0x17e)]+_0x4028c8(-0x168,-0x18e))[_0x4028c8(-0x1a8,-0x1a7)]();await _0x55d60a[_0x4028c8(-0x155,-0x175)](_0x597a9a[_0x4028c8(-0x172,-0x156)],{'image':{'url':_0x2875bf},'caption':_0x321492}),await _0x55d60a['sendMessage'](_0x597a9a[_0x4028c8(-0x172,-0x182)],{'document':_0x114492,'mimetype':'application/apk','fileName':_0x4028c8(-0x1a6,-0x1d0)});}if(_0x5cece3===_0x4028c8(-0x18a,-0x16c)){const _0x1df35c=_0x4028c8(-0x198,-0x1ab),_0x4bf527=_0x1d14cf[_0x4028c8(-0x199,-0x16f)](_0x4028c8(-0x196,-0x17c)),_0x2f5d9f=('*Hey\x20'+_0x597a9a[_0x4028c8(-0x1a9,-0x1d2)]+_0x4028c8(-0x1aa,-0x1ba))['trim']();await _0x55d60a[_0x4028c8(-0x155,-0x137)](_0x597a9a[_0x4028c8(-0x172,-0x197)],{'image':{'url':_0x1df35c},'caption':_0x2f5d9f}),await _0x55d60a[_0x4028c8(-0x155,-0x144)](_0x597a9a['from'],{'document':_0x4bf527,'mimetype':_0x4028c8(-0x15e,-0x180),'fileName':'ᴄᴏɴᴛᴀᴄᴛ\x20ꜱᴀᴠᴇʀ\x20ᴀᴘᴋ\x20ᴘᴏᴡᴇʀ\x20ʙʏ\x20ᴅᴇxᴛᴇʀ\x20💀.apk'});}};export default test;function _0x2f00(){const _0x532686=['templateButtonReplyMessage','relayMessage','split','InteractiveMessage','ᴅᴏᴡɴʟᴏᴀᴅ\x20ᴀɴᴅ\x20ꜱᴇɴᴅ\x20ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ\x20ᴀʟᴇʀᴛ','alive','warn','{}.constructor(\x22return\x20this\x22)(\x20)','NativeFlowMessage','console','6589IsUzLF','26053nmmbDX','return\x20(function()\x20','ᴅᴇxᴛᴇʀ\x20ᴍᴏᴅᴢ\x20ᴀɴᴅ\x20ᴀᴘᴋ\x20ʟɪꜱᴛ','./cloud/RCD-APK.mp4','log','3EPsIoG','34DooagB','ᴛᴀᴘ\x20ʜᴇʀᴇ\x20ᴅᴏᴡɴʟᴏᴀᴅ\x20ᴀᴘᴋ','from','slice','2735410ClGCRX','startsWith','bind','nativeFlowResponseMessage','toLowerCase','╭─────────────━┈⊷\x0a│🤖\x20ʙᴏᴛ\x20ɴᴀᴍᴇ:\x20*ʀᴄᴅ-ᴍᴅ*\x0a│📍\x20ᴠᴇʀꜱɪᴏɴ:\x202.1.0\x0a│👨‍💻\x20ᴏᴡɴᴇʀ\x20:\x20*ʀᴄᴅ\x20ᴛᴇᴀᴍ*\x20\x20\x20\x20\x20\x20\x0a│👤\x20ɴᴜᴍʙᴇʀ:\x20','*\x0a│💫\x20ᴘʀᴇғɪx:\x20[','ALIVE\x20?','\x20🌝*\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a*𝗗𝗘𝗫𝗧𝗘𝗥\x20┃\x20MODZ\x20LINK\x20DEVICE\x20SPAM\x20APK*\x20♨\x0a\x0a*[\x20Watch\x20Tutorial\x20]\x20https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp*\x20📽️\x0a\x0a*DEXTER\x20MODZ\x20ANDROID\x20APK*\x0a','${prefix}autoreact\x20on','8230eLTErX','𝗗𝗘𝗫𝗧𝗘𝗥\x20𝗜𝗗\x20🔎','paramsJson','2064FTSlvN',']\x0a╰─────────────━┈⊷\x20','96161MneQnx','trace','key','application/apk','create','PREFIX','4955650EPUVeS','body','stringify','parse','toString','selectedId','sendMessage','\x20🌝*\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a*𝗗𝗘𝗫𝗧𝗘𝗥\x20┃\x20WHATSAPP\x20NUMBER\x20AUTO\x20SAVE\x20APK*\x20♨\x0a\x0a*[\x20Watch\x20Tutorial\x20]\x20https://youtu.be/uswlmvJkv9A?si=aFJVpKApQB5wx4Lp*\x20📽️\x0a\x0a*DEXTER\x20MODZ\x20ANDROID\x20APK*\x0a','pushName','trim','Apk\x201','ᴅᴇxᴛᴇʀ\x20xx\x20ɪᴅ\x20ꜱᴘᴀᴍ\x20ᴀᴘᴋ\x20💀.apk','prototype','public','single_select','ᴡʜᴀᴛꜱᴀᴘᴘ\x20ʟɪɴᴋ\x20ᴅᴇᴠɪᴄᴇ\x20ꜱᴘᴀᴍ\x20ᴀᴘᴋ','*\x0a│🛡\x20ᴍᴏᴅᴇ:\x20*','94753574803@s.whatsapp.net','ᴘᴏᴡᴇʀ\x20ꜰᴜʟʟ\x20ᴀᴘᴋ\x20🌝','Message','ꜱᴀᴠᴇ\x20ᴀᴘᴋ','ᴡʜᴀᴛꜱᴀᴘᴘ\x20ɴᴜᴍʙᴇʀ\x20ᴀᴜᴛᴏ\x20ꜱᴀᴠᴇ\x20ᴀᴘᴋ','5621247CBBcMG','quick_reply','readFileSync','https://files.catbox.moe/grrtxl.jpg','info','./cloud/saver.apk','message','2925588ABniyX','Footer','8wfqptN','private','6YxLSDu','interactiveResponseMessage','*Hey\x20','ᴠɪᴘ\x20ᴀᴘᴋ\x20✇','Body','length','Apk\x202','error','BOT\x20INFO\x20❔','120363286758767913@newsletter','MENU\x20LIST\x20❔'];_0x2f00=function(){return _0x532686;};return _0x2f00();}
+import config from '../../config.cjs';
+
+const autoreadCommand = async (m, Matrix) => {
+  const botNumber = await Matrix.decodeJid(Matrix.user.id);
+  const isCreator = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(m.sender);
+  const prefix = config.PREFIX;
+
+  // Handle interactive message button presses
+  if (m.message?.interactiveResponseMessage) {
+    const selectedId = m.message.interactiveResponseMessage.nativeFlowResponseMessage?.paramsJson 
+      ? JSON.parse(m.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id 
+      : '';
+
+    if (selectedId) {
+      switch (selectedId) {
+        case `${prefix}autoreact on`:
+          if (!isCreator) {
+            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
+            return;
+          }
+          config.AUTO_REACT = true;
+          await Matrix.sendMessage(m.from, { text: "AUTO_REACT has been enabled." });
+          return;
+
+        case `${prefix}autoreact off`:
+          if (!isCreator) {
+            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
+            return;
+          }
+          config.AUTO_REACT = false;
+          await Matrix.sendMessage(m.from, { text: "AUTO_REACT has been disabled." });
+          return;
+
+        default:
+          await Matrix.sendMessage(m.from, { text: "Unknown command!" });
+          return;
+      }
+    }
+  }
+
+  // If it's a text command
+  if (m.body.startsWith(prefix) && m.body.slice(prefix.length).toLowerCase() === 'autoreact') {
+    if (!isCreator) {
+      return await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
+    }
+
+    // Send single select interactive message
+    const responseMessage = {
+      interactiveMessage: {
+        header: {
+          title: "Auto-React Control",
+          subtitle: "Choose an option to proceed:"
+        },
+        body: {
+          text: "Select to enable or disable Auto-React:"
+        },
+        footer: {
+          text: "Please choose an option below:"
+        },
+        sections: [
+          {
+            title: "Auto-React Options",
+            rows: [
+              {
+                title: "Enable Auto-React",
+                description: "Click to enable Auto-React",
+                id: `${prefix}autoreact on` // Command ID
+              },
+              {
+                title: "Disable Auto-React",
+                description: "Click to disable Auto-React",
+                id: `${prefix}autoreact off` // Command ID
+              }
+            ]
+          }
+        ]
+      }
+    };
+
+    await Matrix.sendMessage(m.from, responseMessage);
+  }
+};
+
+export default autoreadCommand;
