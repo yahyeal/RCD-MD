@@ -12,6 +12,8 @@ const test = async (m, Matrix) => {
   let selectedListId;
   const selectedButtonId = m?.message?.templateButtonReplyMessage?.selectedId;
   const interactiveResponseMessage = m?.message?.interactiveResponseMessage;
+  
+  // Extract selected ID from the message
   if (interactiveResponseMessage) {
     const paramsJson = interactiveResponseMessage.nativeFlowResponseMessage?.paramsJson;
     if (paramsJson) {
@@ -19,6 +21,7 @@ const test = async (m, Matrix) => {
       selectedListId = params.id;
     }
   }
+  
   const selectedId = selectedListId || selectedButtonId;
 
   const prefix = config.PREFIX;
@@ -28,6 +31,7 @@ const test = async (m, Matrix) => {
 
   const validCommands = ['setting', 'owner'];
 
+  // Handle command for setting and owner
   if (validCommands.includes(cmd)) {
     const msg = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
@@ -90,13 +94,13 @@ const test = async (m, Matrix) => {
                             header: "ᴠɪᴘ ᴀᴘᴋ ✇",
                             title: "ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪɴᴋ ᴅᴇᴠɪᴄᴇ ꜱᴘᴀᴍ ᴀᴘᴋ",
                             description: "ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ꜱᴇɴᴅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ᴀʟᴇʀᴛ",
-                            id: "`${prefix}autoreact on"
+                            id: `${prefix}autoreact on`
                           },
                           {
                             header: "ᴠɪᴘ ✇",
                             title: "ꜱᴀᴠᴇ ᴀᴘᴋ",
                             description: "ᴡʜᴀᴛꜱᴀᴘᴘ ɴᴜᴍʙᴇʀ ᴀᴜᴛᴏ ꜱᴀᴠᴇ ᴀᴘᴋ",
-                            id: "`${prefix}autoreact off"
+                            id: `${prefix}autoreact off`
                           }
                         ]
                       }
@@ -125,31 +129,34 @@ const test = async (m, Matrix) => {
     });
   }
 
+  // If a button was selected, process the action based on the selected ID
   if (selectedId) {
-      switch (selectedId) {
-        case `${prefix}autoreact on`:
-          if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
-            return;
-          }
-          config.AUTO_REACT = true;
-          await Matrix.sendMessage(m.from, { text: "AUTO_REACT has been enabled." });
+    switch (selectedId) {
+      case `${prefix}autoreact on`:
+        if (m.sender !== ownerNumber) { // Check if the sender is the owner
+          await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
           return;
+        }
+        config.AUTO_REACT = true;
+        await Matrix.sendMessage(m.from, { text: "AUTO_REACT has been enabled." });
+        return;
 
-        case `${prefix}autoreact off`:
-          if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
-            return;
-          }
-          config.AUTO_REACT = false;
-          await Matrix.sendMessage(m.from, { text: "AUTO_REACT has been disabled." });
+      case `${prefix}autoreact off`:
+        if (m.sender !== ownerNumber) { // Check if the sender is the owner
+          await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" });
           return;
+        }
+        config.AUTO_REACT = false;
+        await Matrix.sendMessage(m.from, { text: "AUTO_REACT has been disabled." });
+        return;
 
-        default:
-          await Matrix.sendMessage(m.from, { text: "Unknown command!" });
-          return;
-      }
+      // Add more cases here for other commands if necessary
+
+      default:
+        await Matrix.sendMessage(m.from, { text: "Unknown command!" });
+        return;
     }
   }
+}
 
 export default test;
