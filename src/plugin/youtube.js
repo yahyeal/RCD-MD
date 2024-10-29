@@ -34,17 +34,13 @@ const videoCommand = async (m, Matrix) => {
     const videoDetails = await fetchVideoDetails(videoUrl);
     if (!videoDetails) return m.reply("Failed to retrieve video details.");
 
-    // Display video options with title, thumbnail, and quality selection
+    // Display video options with title and thumbnail
     const msg = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
         message: {
-          imageMessage: {
-            url: videoDetails.thumbnail,  // Include thumbnail image
-            caption: `*${videoDetails.title}*\nChoose a quality to download.\n\n© RCD-MD Bot`
-          },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `Choose a quality to download.`
+              text: `*${videoDetails.title}*\nChoose a quality to download.`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: "© RCD-MD Bot"
@@ -103,8 +99,8 @@ const videoCommand = async (m, Matrix) => {
       const videoDetails = await fetchVideoDetails(videoUrl, quality);
       if (videoDetails && videoDetails.download_url) {
         await Matrix.sendMessage(m.from, {
-          text: `*Title:* ${videoDetails.title}\n*Quality:* ${videoDetails.quality}\n\n[Download Video](${videoDetails.download_url})`,
-          image: { url: videoDetails.thumbnail }
+          image: { url: videoDetails.thumbnail },
+          caption: `*Title:* ${videoDetails.title}\n*Quality:* ${videoDetails.quality}\n\n[Download Video](${videoDetails.download_url})`
         });
       } else {
         await m.reply("Failed to retrieve the download link. Please try again.");
