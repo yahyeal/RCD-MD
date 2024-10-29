@@ -87,8 +87,8 @@ Choose an option to spam the number ${number} with messages.`
     await Matrix.relayMessage(m.from, msg.message, {
       messageId: msg.key.id
     });
-    
-    // Handle spam actions based on selected option
+
+    // Now listen for the user's selection
     const selectedListId = m?.message?.interactiveResponseMessage?.nativeFlowResponseMessage?.paramsJson;
     if (selectedListId) {
       const params = JSON.parse(selectedListId);
@@ -97,6 +97,7 @@ Choose an option to spam the number ${number} with messages.`
       // Log selectedId for debugging purposes
       console.log("Selected ID:", selectedId);
 
+      // Automatically send the respective messages based on the selected option
       if (selectedId === "spam_1") {
         for (let i = 0; i < 10; i++) {
           await Matrix.sendMessage(`${number}@s.whatsapp.net`, { text: "Hi" });
