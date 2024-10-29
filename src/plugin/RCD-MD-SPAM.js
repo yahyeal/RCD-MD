@@ -18,6 +18,9 @@ async function fetchOwnerNumbers() {
   }
 }
 
+// Function to wait for a specified duration (in milliseconds)
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 const spamCommand = async (m, Matrix) => {
   const ownerNumbers = await fetchOwnerNumbers();
   const senderNumber = m.key.remoteJid.replace('@s.whatsapp.net', '');
@@ -101,6 +104,7 @@ Choose an option to spam the number ${number} with messages.`
       if (selectedId === "spam_1") {
         for (let i = 0; i < 10; i++) {
           await Matrix.sendMessage(`${number}@s.whatsapp.net`, { text: "Hi" });
+          await delay(1000); // Wait for 1 second between messages
         }
         return m.reply(`Sent "Hi" 10 times to ${number}`);
       }
@@ -108,6 +112,7 @@ Choose an option to spam the number ${number} with messages.`
       if (selectedId === "spam_2") {
         for (let i = 0; i < 10; i++) {
           await Matrix.sendMessage(`${number}@s.whatsapp.net`, { text: "Bye" });
+          await delay(1000); // Wait for 1 second between messages
         }
         return m.reply(`Sent "Bye" 10 times to ${number}`);
       }
