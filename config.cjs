@@ -21,7 +21,7 @@ const config = {
   MODE: process.env.MODE || "public",
   PREFIX: process.env.PREFIX || "!",
   OWNER_NAME: process.env.OWNER_NAME || "",
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "",
+  SUDO_NUMBER: process.env.OWNER_NUMBER || "",
   GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc",
   WELCOME: process.env.WELCOME !== undefined ? process.env.WELCOME === 'true' : false, 
 };
