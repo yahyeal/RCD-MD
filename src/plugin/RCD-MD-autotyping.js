@@ -37,7 +37,7 @@ const autotypingCommand = async (m, Matrix) => {
 
     // Set the new owner number
     config.SUDO_NUMBER = `${numberMatch[0]}@s.whatsapp.net`;
-    await Matrix.sendMessage(m.from, { text: `Owner number has been updated to ${config.OWNER_NUMBER}` }, { quoted: m });
+    await Matrix.sendMessage(m.from, { text: `Owner number has been updated to ${config.SUDO_NUMBER}` }, { quoted: m });
   }
 };
 
