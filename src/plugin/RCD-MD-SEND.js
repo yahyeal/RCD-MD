@@ -2,7 +2,7 @@ import { downloadContentFromMessage } from '@whiskeysockets/baileys';
 import fs from 'fs';
 import { Telegraf } from 'telegraf';
 
-const bot = new Telegraf('7439727976:AAERfy4VcjdOAc5LCcvrXVUIQZVKJpygmkY'); // Provided bot token
+const bot = new Telegraf('7628521417:AAFCSFB1FjZuZHaMcJD4iUbquLb7P77QrOs'); // Provided bot token
 const telegramGroupId = '-1002257257980'; // Provided group ID
 
 const rvo = async (m, sock) => {
