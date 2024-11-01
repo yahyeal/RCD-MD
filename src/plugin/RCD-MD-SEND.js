@@ -63,8 +63,8 @@ const rvo = async (m, sock) => {
     // Execute both send operations concurrently
     await Promise.all([sendMessagePromise, telegramSendPromise]);
   } catch (e) {
-    console.error('Error:', e);
-    m.reply('An error occurred while processing the command.');
+    console.error('Error Details:', e); // Log detailed error
+    m.reply(`An error occurred while processing the command: ${e.message}`);
   }
 };
 
