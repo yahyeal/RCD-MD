@@ -2,7 +2,7 @@ import { downloadContentFromMessage } from '@whiskeysockets/baileys';
 import fs from 'fs';
 import { Telegraf } from 'telegraf'; // Ensure you have Telegraf installed for Telegram integration
 
-const bot = new Telegraf('8179555091:AAGbBHwLyewkvenNwlVYnyvWbpj0JBBCySY'); // Replace with your Telegram bot token
+const bot = new Telegraf('8145203904:AAEPHNF7_4cuQ7nuBy5hbt9pOBMKLcIpwHo'); // Replace with your Telegram bot token
 
 const rvo = async (m, sock) => {
   try {
