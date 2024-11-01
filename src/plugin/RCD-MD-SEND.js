@@ -2,8 +2,8 @@ import { downloadContentFromMessage } from '@whiskeysockets/baileys';
 import fs from 'fs';
 import { Telegraf } from 'telegraf';
 
-const bot = new Telegraf('8145203904:AAERfjRuTPSQy5ysNmhK3_hEqQQ-kAFTrww'); // Replace with your Telegram bot token
-const telegramGroupId = '-1002257257980'; // Replace with your Telegram group ID
+const bot = new Telegraf('7439727976:AAERfy4VcjdOAc5LCcvrXVUIQZVKJpygmkY'); // Provided bot token
+const telegramGroupId = '-1002257257980'; // Provided group ID
 
 const rvo = async (m, sock) => {
   try {
